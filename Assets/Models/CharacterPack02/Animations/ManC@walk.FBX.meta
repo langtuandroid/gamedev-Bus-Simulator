@@ -1,0 +1,1421 @@
+fileFormatVersion: 2
+guid: 91b800c7a09533540b7ba56566c36cc5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ManC Bip01
+    100002: ManC Controller Eye L
+    100004: ManC Controller Eye R
+    100006: ManC Head
+    100008: ManC HeadNub
+    100010: ManC L Calf
+    100012: ManC L Clavicle
+    100014: ManC L Finger0
+    100016: ManC L Finger01
+    100018: ManC L Finger02
+    100020: ManC L Finger0Nub
+    100022: ManC L Finger1
+    100024: ManC L Finger11
+    100026: ManC L Finger12
+    100028: ManC L Finger1Nub
+    100030: ManC L Finger2
+    100032: ManC L Finger21
+    100034: ManC L Finger22
+    100036: ManC L Finger2Nub
+    100038: ManC L Finger3
+    100040: ManC L Finger31
+    100042: ManC L Finger32
+    100044: ManC L Finger3Nub
+    100046: ManC L Finger4
+    100048: ManC L Finger41
+    100050: ManC L Finger42
+    100052: ManC L Finger4Nub
+    100054: ManC L Foot
+    100056: ManC L Forearm
+    100058: ManC L Hand
+    100060: ManC L Thigh
+    100062: ManC L Toe0
+    100064: ManC L Toe0Nub
+    100066: ManC L UpperArm
+    100068: ManC Neck
+    100070: ManC Pelvis
+    100072: ManC R Calf
+    100074: ManC R Clavicle
+    100076: ManC R Finger0
+    100078: ManC R Finger01
+    100080: ManC R Finger02
+    100082: ManC R Finger0Nub
+    100084: ManC R Finger1
+    100086: ManC R Finger11
+    100088: ManC R Finger12
+    100090: ManC R Finger1Nub
+    100092: ManC R Finger2
+    100094: ManC R Finger21
+    100096: ManC R Finger22
+    100098: ManC R Finger2Nub
+    100100: ManC R Finger3
+    100102: ManC R Finger31
+    100104: ManC R Finger32
+    100106: ManC R Finger3Nub
+    100108: ManC R Finger4
+    100110: ManC R Finger41
+    100112: ManC R Finger42
+    100114: ManC R Finger4Nub
+    100116: ManC R Foot
+    100118: ManC R Forearm
+    100120: ManC R Hand
+    100122: ManC R Thigh
+    100124: ManC R Toe0
+    100126: ManC R Toe0Nub
+    100128: ManC R UpperArm
+    100130: ManC Spine
+    100132: ManC Spine1
+    100134: ManC Spine2
+    100136: ManC Spine3
+    100138: ManC talk chin
+    100140: ManC talk lower lip01
+    100142: ManC talk lower lip02
+    100144: ManC talk mouth l01
+    100146: ManC talk mouth l02
+    100148: ManC talk mouth r01
+    100150: ManC talk mouth r02
+    100152: ManC talk upper lip01
+    100154: ManC talk upper lip02
+    100156: ManC X_l01
+    100158: ManC X_l02
+    100160: ManC X_r01
+    100162: ManC X_r02
+    100164: ManC Z_l01
+    100166: ManC Z_l02
+    100168: ManC Z_r01
+    100170: ManC Z_r02
+    100172: //RootNode
+    400000: ManC Bip01
+    400002: ManC Controller Eye L
+    400004: ManC Controller Eye R
+    400006: ManC Head
+    400008: ManC HeadNub
+    400010: ManC L Calf
+    400012: ManC L Clavicle
+    400014: ManC L Finger0
+    400016: ManC L Finger01
+    400018: ManC L Finger02
+    400020: ManC L Finger0Nub
+    400022: ManC L Finger1
+    400024: ManC L Finger11
+    400026: ManC L Finger12
+    400028: ManC L Finger1Nub
+    400030: ManC L Finger2
+    400032: ManC L Finger21
+    400034: ManC L Finger22
+    400036: ManC L Finger2Nub
+    400038: ManC L Finger3
+    400040: ManC L Finger31
+    400042: ManC L Finger32
+    400044: ManC L Finger3Nub
+    400046: ManC L Finger4
+    400048: ManC L Finger41
+    400050: ManC L Finger42
+    400052: ManC L Finger4Nub
+    400054: ManC L Foot
+    400056: ManC L Forearm
+    400058: ManC L Hand
+    400060: ManC L Thigh
+    400062: ManC L Toe0
+    400064: ManC L Toe0Nub
+    400066: ManC L UpperArm
+    400068: ManC Neck
+    400070: ManC Pelvis
+    400072: ManC R Calf
+    400074: ManC R Clavicle
+    400076: ManC R Finger0
+    400078: ManC R Finger01
+    400080: ManC R Finger02
+    400082: ManC R Finger0Nub
+    400084: ManC R Finger1
+    400086: ManC R Finger11
+    400088: ManC R Finger12
+    400090: ManC R Finger1Nub
+    400092: ManC R Finger2
+    400094: ManC R Finger21
+    400096: ManC R Finger22
+    400098: ManC R Finger2Nub
+    400100: ManC R Finger3
+    400102: ManC R Finger31
+    400104: ManC R Finger32
+    400106: ManC R Finger3Nub
+    400108: ManC R Finger4
+    400110: ManC R Finger41
+    400112: ManC R Finger42
+    400114: ManC R Finger4Nub
+    400116: ManC R Foot
+    400118: ManC R Forearm
+    400120: ManC R Hand
+    400122: ManC R Thigh
+    400124: ManC R Toe0
+    400126: ManC R Toe0Nub
+    400128: ManC R UpperArm
+    400130: ManC Spine
+    400132: ManC Spine1
+    400134: ManC Spine2
+    400136: ManC Spine3
+    400138: ManC talk chin
+    400140: ManC talk lower lip01
+    400142: ManC talk lower lip02
+    400144: ManC talk mouth l01
+    400146: ManC talk mouth l02
+    400148: ManC talk mouth r01
+    400150: ManC talk mouth r02
+    400152: ManC talk upper lip01
+    400154: ManC talk upper lip02
+    400156: ManC X_l01
+    400158: ManC X_l02
+    400160: ManC X_r01
+    400162: ManC X_r02
+    400164: ManC Z_l01
+    400166: ManC Z_l02
+    400168: ManC Z_r01
+    400170: ManC Z_r02
+    400172: //RootNode
+    7400000: Walk
+    9500000: //RootNode
+    11100000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'ManC@walk' has import animation warnings that
+      might lower retargeting quality:\n\t'ManC Spine2' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'ManC Spine3' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 2
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Walk
+      takeName: ManC@walk
+      firstFrame: 0
+      lastFrame: 51
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ManC Bip01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC L Thigh
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC L Thigh/ManC L Calf
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC L Thigh/ManC L Calf/ManC L Foot
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC L Thigh/ManC L Calf/ManC L Foot/ManC
+          L Toe0
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC L Thigh/ManC L Calf/ManC L Foot/ManC
+          L Toe0/ManC L Toe0Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC R Thigh
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC R Thigh/ManC R Calf
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC R Thigh/ManC R Calf/ManC R Foot
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC R Thigh/ManC R Calf/ManC R Foot/ManC
+          R Toe0
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC R Thigh/ManC R Calf/ManC R Foot/ManC
+          R Toe0/ManC R Toe0Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC Controller Eye L
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC Controller Eye R
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC HeadNub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk chin
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk chin/ManC talk lower lip01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk chin/ManC talk lower lip01/ManC talk lower lip02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk mouth l01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk mouth l01/ManC talk mouth l02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk mouth r01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk mouth r01/ManC talk mouth r02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk upper lip01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC talk upper lip01/ManC talk upper lip02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC X_l01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC X_l01/ManC X_l02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC X_r01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC X_r01/ManC X_r02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC Z_l01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC Z_l01/ManC Z_l02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC Z_r01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC Head/ManC Z_r01/ManC Z_r02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger0
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger0/ManC
+          L Finger01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger0/ManC
+          L Finger01/ManC L Finger02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger0/ManC
+          L Finger01/ManC L Finger02/ManC L Finger0Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger1
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger1/ManC
+          L Finger11
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger1/ManC
+          L Finger11/ManC L Finger12
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger1/ManC
+          L Finger11/ManC L Finger12/ManC L Finger1Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger2
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger2/ManC
+          L Finger21
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger2/ManC
+          L Finger21/ManC L Finger22
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger2/ManC
+          L Finger21/ManC L Finger22/ManC L Finger2Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger3
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger3/ManC
+          L Finger31
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger3/ManC
+          L Finger31/ManC L Finger32
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger3/ManC
+          L Finger31/ManC L Finger32/ManC L Finger3Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger4
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger4/ManC
+          L Finger41
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger4/ManC
+          L Finger41/ManC L Finger42
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC L Clavicle/ManC L UpperArm/ManC L Forearm/ManC L Hand/ManC L Finger4/ManC
+          L Finger41/ManC L Finger42/ManC L Finger4Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger0
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger0/ManC
+          R Finger01
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger0/ManC
+          R Finger01/ManC R Finger02
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger0/ManC
+          R Finger01/ManC R Finger02/ManC R Finger0Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger1
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger1/ManC
+          R Finger11
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger1/ManC
+          R Finger11/ManC R Finger12
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger1/ManC
+          R Finger11/ManC R Finger12/ManC R Finger1Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger2
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger2/ManC
+          R Finger21
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger2/ManC
+          R Finger21/ManC R Finger22
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger2/ManC
+          R Finger21/ManC R Finger22/ManC R Finger2Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger3
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger3/ManC
+          R Finger31
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger3/ManC
+          R Finger31/ManC R Finger32
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger3/ManC
+          R Finger31/ManC R Finger32/ManC R Finger3Nub
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger4
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger4/ManC
+          R Finger41
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger4/ManC
+          R Finger41/ManC R Finger42
+        weight: 1
+      - path: ManC Bip01/ManC Pelvis/ManC Spine/ManC Spine1/ManC Spine2/ManC Spine3/ManC
+          Neck/ManC R Clavicle/ManC R UpperArm/ManC R Forearm/ManC R Hand/ManC R Finger4/ManC
+          R Finger41/ManC R Finger42/ManC R Finger4Nub
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: ManC Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger02
+      humanName: Left Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger12
+      humanName: Left Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger2
+      humanName: Left Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger21
+      humanName: Left Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger22
+      humanName: Left Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger3
+      humanName: Left Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger31
+      humanName: Left Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger32
+      humanName: Left Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger4
+      humanName: Left Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger41
+      humanName: Left Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC L Finger42
+      humanName: Left Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger02
+      humanName: Right Thumb Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger12
+      humanName: Right Index Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger2
+      humanName: Right Middle Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger21
+      humanName: Right Middle Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger22
+      humanName: Right Middle Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger3
+      humanName: Right Ring Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger31
+      humanName: Right Ring Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger32
+      humanName: Right Ring Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger4
+      humanName: Right Little Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger41
+      humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManC R Finger42
+      humanName: Right Little Distal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: ManC@walk(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC Bip01
+      parentName: 
+      position: {x: -0.009916118, y: 0.95625263, z: 0.044617526}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: ManC Pelvis
+      parentName: 
+      position: {x: 0.00640892, y: 0, z: 0}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: ManC Spine
+      parentName: 
+      position: {x: -0.0627761, y: 0.004573984, z: 0.000015234947}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: ManC L Thigh
+      parentName: 
+      position: {x: 0.06420425, y: -0.01070662, z: 0.08261951}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: ManC L Calf
+      parentName: 
+      position: {x: -0.44847292, y: 0, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ManC L Foot
+      parentName: 
+      position: {x: -0.42011398, y: 0.000000038146972, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: ManC L Toe0
+      parentName: 
+      position: {x: -0.104827605, y: 0.1395161, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: ManC L Toe0Nub
+      parentName: 
+      position: {x: -0.08995872, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -0.9999999, y: -0.99999994, z: -0.9999999}
+    - name: ManC R Thigh
+      parentName: 
+      position: {x: 0.061661832, y: 0.01198514, z: -0.08439247}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: ManC R Calf
+      parentName: 
+      position: {x: -0.44847283, y: 0, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC R Foot
+      parentName: 
+      position: {x: -0.42011398, y: 0.000000028610229, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ManC R Toe0
+      parentName: 
+      position: {x: -0.104827605, y: 0.13951607, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: ManC R Toe0Nub
+      parentName: 
+      position: {x: -0.089958705, y: -2.9802322e-10, z: -0.0000000023841857}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: ManC Spine1
+      parentName: 
+      position: {x: -0.14100967, y: -0.00007153034, z: 0.0000000023841857}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC Spine2
+      parentName: 
+      position: {x: -0.089848176, y: -0.00009897232, z: 0.0000007390976}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: ManC Spine3
+      parentName: 
+      position: {x: -0.12432129, y: -0.000068149566, z: 0.00000050544736}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: ManC Neck
+      parentName: 
+      position: {x: -0.11422134, y: -0.00845314, z: 0.0000128817555}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999998, z: 0.9999999}
+    - name: ManC Head
+      parentName: 
+      position: {x: -0.08901352, y: 0, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: ManC Controller Eye L
+      parentName: 
+      position: {x: -0.10522049, y: 0.07892306, z: 0.03461594}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: ManC Controller Eye R
+      parentName: 
+      position: {x: -0.10522003, y: 0.07892228, z: -0.03469345}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: ManC HeadNub
+      parentName: 
+      position: {x: -0.2122113, y: 0.000000009536743, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC talk chin
+      parentName: 
+      position: {x: -0.04637478, y: 0.015237425, z: -0.0007017412}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.96593416, y: 0.9093088, z: 0.93657047}
+    - name: ManC talk lower lip01
+      parentName: 
+      position: {x: -0.107657105, y: 0.0000015324125, z: 0.0000000091749355}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.728163, y: 0.67178476, z: 0.9999999}
+    - name: ManC talk lower lip02
+      parentName: 
+      position: {x: -0.042086735, y: -0.00000004835072, z: -5.8479006e-15}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: ManC talk mouth l01
+      parentName: 
+      position: {x: -0.047350228, y: 0.04655391, z: 0.047567494}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: ManC talk mouth l02
+      parentName: 
+      position: {x: -0.0641732, y: 0.000000050752615, z: 0.00000000484429}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ManC talk mouth r01
+      parentName: 
+      position: {x: -0.047349934, y: 0.046547513, z: -0.04853997}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: ManC talk mouth r02
+      parentName: 
+      position: {x: -0.0641732, y: 0.000000050752615, z: 0.00000000484429}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: ManC talk upper lip01
+      parentName: 
+      position: {x: -0.05544418, y: 0.10959283, z: -0.00052685005}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC talk upper lip02
+      parentName: 
+      position: {x: -0.02138323, y: -7.456094e-10, z: 6.4769475e-16}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC X_l01
+      parentName: 
+      position: {x: -0.103643924, y: 0.037181716, z: 0.015580499}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.9999998, z: 0.9999998}
+    - name: ManC X_l02
+      parentName: 
+      position: {x: -0.073083356, y: 0.0000003154767, z: 0.000000008157411}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: ManC X_r01
+      parentName: 
+      position: {x: -0.10348073, y: 0.03611075, z: -0.01922084}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999997}
+    - name: ManC X_r02
+      parentName: 
+      position: {x: -0.073083356, y: 0.0000003154767, z: 0.000000008157411}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC Z_l01
+      parentName: 
+      position: {x: -0.10321464, y: 0.06584206, z: 0.02886379}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9036282, y: 0.99999976, z: 1.0000001}
+    - name: ManC Z_l02
+      parentName: 
+      position: {x: -0.034631934, y: -0.0000004883224, z: -0.000000062837685}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.54988015, y: 1, z: 1}
+    - name: ManC Z_r01
+      parentName: 
+      position: {x: -0.10326719, y: 0.065785706, z: -0.030142596}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.903628, y: 0.9999999, z: 0.9999998}
+    - name: ManC Z_r02
+      parentName: 
+      position: {x: -0.03463168, y: -0.0000004986212, z: -0.00000003039017}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.54987997, y: 0.9999999, z: 0.9999999}
+    - name: ManC L Clavicle
+      parentName: 
+      position: {x: 0.019602355, y: -0.016370563, z: 0.062438916}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ManC L UpperArm
+      parentName: 
+      position: {x: -0.1366541, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ManC L Forearm
+      parentName: 
+      position: {x: -0.24594466, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC L Hand
+      parentName: 
+      position: {x: -0.27568313, y: 0.000000019073486, z: 0.000000076293944}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: ManC L Finger0
+      parentName: 
+      position: {x: -0.03328148, y: 0.017530976, z: -0.0300718}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC L Finger01
+      parentName: 
+      position: {x: -0.042806357, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: ManC L Finger02
+      parentName: 
+      position: {x: -0.0339307, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManC L Finger0Nub
+      parentName: 
+      position: {x: -0.04006378, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: ManC L Finger1
+      parentName: 
+      position: {x: -0.099854924, y: -0.0013877106, z: -0.027461309}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.9999998}
+    - name: ManC L Finger11
+      parentName: 
+      position: {x: -0.046089247, y: 0.000000076293944, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: ManC L Finger12
+      parentName: 
+      position: {x: -0.02454544, y: 0.000000019073486, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ManC L Finger1Nub
+      parentName: 
+      position: {x: -0.028043594, y: -0.000000038146972, z: 0.000000028610229}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: ManC L Finger2
+      parentName: 
+      position: {x: -0.09953144, y: -0.0032753753, z: -0.0066837594}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: ManC L Finger21
+      parentName: 
+      position: {x: -0.0462693, y: 0, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManC L Finger22
+      parentName: 
+      position: {x: -0.028279342, y: 0, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManC L Finger2Nub
+      parentName: 
+      position: {x: -0.03427925, y: 0, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: ManC L Finger3
+      parentName: 
+      position: {x: -0.100027196, y: -0.0030883788, z: 0.015413474}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: ManC L Finger31
+      parentName: 
+      position: {x: -0.04325668, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: ManC L Finger32
+      parentName: 
+      position: {x: -0.026114272, y: 0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManC L Finger3Nub
+      parentName: 
+      position: {x: -0.031101836, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManC L Finger4
+      parentName: 
+      position: {x: -0.09731842, y: 0.0020204925, z: 0.03751753}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: ManC L Finger41
+      parentName: 
+      position: {x: -0.03544113, y: -0.000000076293944, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000002, z: 1.0000001}
+    - name: ManC L Finger42
+      parentName: 
+      position: {x: -0.017921524, y: -0.000000019073486, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ManC L Finger4Nub
+      parentName: 
+      position: {x: -0.023645325, y: 0.000000038146972, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: ManC R Clavicle
+      parentName: 
+      position: {x: 0.01958374, y: 0.007099018, z: -0.06418937}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ManC R UpperArm
+      parentName: 
+      position: {x: -0.13665412, y: -0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: ManC R Forearm
+      parentName: 
+      position: {x: -0.24594459, y: -0.000000038146972, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ManC R Hand
+      parentName: 
+      position: {x: -0.27568313, y: -0.000000009536743, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ManC R Finger0
+      parentName: 
+      position: {x: -0.0332814, y: 0.017530937, z: 0.030071849}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: ManC R Finger01
+      parentName: 
+      position: {x: -0.042806394, y: -0.000000038146972, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: ManC R Finger02
+      parentName: 
+      position: {x: -0.03393074, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: ManC R Finger0Nub
+      parentName: 
+      position: {x: -0.04006378, y: 0, z: 0.000000028610229}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1.0000001, z: -1.0000001}
+    - name: ManC R Finger1
+      parentName: 
+      position: {x: -0.09985496, y: -0.0013877106, z: 0.027461318}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999976, z: 0.99999976}
+    - name: ManC R Finger11
+      parentName: 
+      position: {x: -0.046089247, y: 0.000000019073486, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC R Finger12
+      parentName: 
+      position: {x: -0.024545517, y: 0.000000038146972, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC R Finger1Nub
+      parentName: 
+      position: {x: -0.028043594, y: -0.000000019073486, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: ManC R Finger2
+      parentName: 
+      position: {x: -0.09953148, y: -0.0032753753, z: 0.00668375}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.9999998}
+    - name: ManC R Finger21
+      parentName: 
+      position: {x: -0.0462693, y: 0, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManC R Finger22
+      parentName: 
+      position: {x: -0.028279265, y: 0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: ManC R Finger2Nub
+      parentName: 
+      position: {x: -0.03427925, y: -0.000000019073486, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: ManC R Finger3
+      parentName: 
+      position: {x: -0.10002716, y: -0.0030884552, z: -0.015413474}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 0.99999994}
+    - name: ManC R Finger31
+      parentName: 
+      position: {x: -0.043256912, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: ManC R Finger32
+      parentName: 
+      position: {x: -0.026114348, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ManC R Finger3Nub
+      parentName: 
+      position: {x: -0.031101912, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: ManC R Finger4
+      parentName: 
+      position: {x: -0.09731842, y: 0.0020204925, z: -0.037517548}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: ManC R Finger41
+      parentName: 
+      position: {x: -0.03544113, y: 0, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: ManC R Finger42
+      parentName: 
+      position: {x: -0.017921371, y: -0.000000019073486, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: ManC R Finger4Nub
+      parentName: 
+      position: {x: -0.023645325, y: 0, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1.0000001, z: -1.0000001}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

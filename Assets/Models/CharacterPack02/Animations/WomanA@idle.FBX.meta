@@ -1,0 +1,934 @@
+fileFormatVersion: 2
+guid: 5cc6dac56a191264ea132dce86623040
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: WomanA Bip01
+    100002: WomanA Head
+    100004: WomanA HeadNub
+    100006: WomanA L Calf
+    100008: WomanA L Clavicle
+    100010: WomanA L Finger0
+    100012: WomanA L Finger01
+    100014: WomanA L Finger0Nub
+    100016: WomanA L Finger1
+    100018: WomanA L Finger11
+    100020: WomanA L Finger1Nub
+    100022: WomanA L Foot
+    100024: WomanA L Forearm
+    100026: WomanA L Hand
+    100028: WomanA L Thigh
+    100030: WomanA L Toe0
+    100032: WomanA L Toe0Nub
+    100034: WomanA L UpperArm
+    100036: WomanA Neck
+    100038: WomanA Pelvis
+    100040: WomanA R Calf
+    100042: WomanA R Clavicle
+    100044: WomanA R Finger0
+    100046: WomanA R Finger01
+    100048: WomanA R Finger0Nub
+    100050: WomanA R Finger1
+    100052: WomanA R Finger11
+    100054: WomanA R Finger1Nub
+    100056: WomanA R Foot
+    100058: WomanA R Forearm
+    100060: WomanA R Hand
+    100062: WomanA R Thigh
+    100064: WomanA R Toe0
+    100066: WomanA R Toe0Nub
+    100068: WomanA R UpperArm
+    100070: WomanA Spine
+    100072: WomanA Spine1
+    100074: WomanA Spine2
+    100076: WomanA Spine3
+    100078: WomanA talk chin
+    100080: WomanA talk lower lip01
+    100082: WomanA talk lower lip02
+    100084: WomanA talk mouth l01
+    100086: WomanA talk mouth l02
+    100088: WomanA talk mouth r01
+    100090: WomanA talk mouth r02
+    100092: WomanA talk upper lip01
+    100094: WomanA talk upper lip02
+    100096: WomanA X_l01
+    100098: WomanA X_l02
+    100100: WomanA X_r01
+    100102: WomanA X_r02
+    100104: WomanA Z_l01
+    100106: WomanA Z_l02
+    100108: WomanA Z_r01
+    100110: WomanA Z_r02
+    100112: //RootNode
+    400000: WomanA Bip01
+    400002: WomanA Head
+    400004: WomanA HeadNub
+    400006: WomanA L Calf
+    400008: WomanA L Clavicle
+    400010: WomanA L Finger0
+    400012: WomanA L Finger01
+    400014: WomanA L Finger0Nub
+    400016: WomanA L Finger1
+    400018: WomanA L Finger11
+    400020: WomanA L Finger1Nub
+    400022: WomanA L Foot
+    400024: WomanA L Forearm
+    400026: WomanA L Hand
+    400028: WomanA L Thigh
+    400030: WomanA L Toe0
+    400032: WomanA L Toe0Nub
+    400034: WomanA L UpperArm
+    400036: WomanA Neck
+    400038: WomanA Pelvis
+    400040: WomanA R Calf
+    400042: WomanA R Clavicle
+    400044: WomanA R Finger0
+    400046: WomanA R Finger01
+    400048: WomanA R Finger0Nub
+    400050: WomanA R Finger1
+    400052: WomanA R Finger11
+    400054: WomanA R Finger1Nub
+    400056: WomanA R Foot
+    400058: WomanA R Forearm
+    400060: WomanA R Hand
+    400062: WomanA R Thigh
+    400064: WomanA R Toe0
+    400066: WomanA R Toe0Nub
+    400068: WomanA R UpperArm
+    400070: WomanA Spine
+    400072: WomanA Spine1
+    400074: WomanA Spine2
+    400076: WomanA Spine3
+    400078: WomanA talk chin
+    400080: WomanA talk lower lip01
+    400082: WomanA talk lower lip02
+    400084: WomanA talk mouth l01
+    400086: WomanA talk mouth l02
+    400088: WomanA talk mouth r01
+    400090: WomanA talk mouth r02
+    400092: WomanA talk upper lip01
+    400094: WomanA talk upper lip02
+    400096: WomanA X_l01
+    400098: WomanA X_l02
+    400100: WomanA X_r01
+    400102: WomanA X_r02
+    400104: WomanA Z_l01
+    400106: WomanA Z_l02
+    400108: WomanA Z_r01
+    400110: WomanA Z_r02
+    400112: //RootNode
+    7400000: idle
+    9500000: //RootNode
+    11100000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'WomanA@idle' has import animation warnings that
+      might lower retargeting quality:\n\t'WomanA Spine2' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'WomanA Spine3' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 1
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: WomanA@idle
+      firstFrame: 0
+      lastFrame: 453
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: WomanA Bip01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA L Thigh
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA L Thigh/WomanA L Calf
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA L Thigh/WomanA L Calf/WomanA
+          L Foot
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA L Thigh/WomanA L Calf/WomanA
+          L Foot/WomanA L Toe0
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA L Thigh/WomanA L Calf/WomanA
+          L Foot/WomanA L Toe0/WomanA L Toe0Nub
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA R Thigh
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA R Thigh/WomanA R Calf
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA R Thigh/WomanA R Calf/WomanA
+          R Foot
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA R Thigh/WomanA R Calf/WomanA
+          R Foot/WomanA R Toe0
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA R Thigh/WomanA R Calf/WomanA
+          R Foot/WomanA R Toe0/WomanA R Toe0Nub
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA HeadNub
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk chin
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk chin/WomanA talk lower lip01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk chin/WomanA talk lower lip01/WomanA
+          talk lower lip02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk mouth l01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk mouth l01/WomanA talk mouth l02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk mouth r01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk mouth r01/WomanA talk mouth r02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk upper lip01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA talk upper lip01/WomanA talk upper
+          lip02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA X_l01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA X_l01/WomanA X_l02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA X_r01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA X_r01/WomanA X_r02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA Z_l01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA Z_l01/WomanA Z_l02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA Z_r01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA Head/WomanA Z_r01/WomanA Z_r02
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm/WomanA
+          L Hand
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm/WomanA
+          L Hand/WomanA L Finger0
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm/WomanA
+          L Hand/WomanA L Finger0/WomanA L Finger01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm/WomanA
+          L Hand/WomanA L Finger0/WomanA L Finger01/WomanA L Finger0Nub
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm/WomanA
+          L Hand/WomanA L Finger1
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm/WomanA
+          L Hand/WomanA L Finger1/WomanA L Finger11
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA L Clavicle/WomanA L UpperArm/WomanA L Forearm/WomanA
+          L Hand/WomanA L Finger1/WomanA L Finger11/WomanA L Finger1Nub
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm/WomanA
+          R Hand
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm/WomanA
+          R Hand/WomanA R Finger0
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm/WomanA
+          R Hand/WomanA R Finger0/WomanA R Finger01
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm/WomanA
+          R Hand/WomanA R Finger0/WomanA R Finger01/WomanA R Finger0Nub
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm/WomanA
+          R Hand/WomanA R Finger1
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm/WomanA
+          R Hand/WomanA R Finger1/WomanA R Finger11
+        weight: 1
+      - path: WomanA Bip01/WomanA Pelvis/WomanA Spine/WomanA Spine1/WomanA Spine2/WomanA
+          Spine3/WomanA Neck/WomanA R Clavicle/WomanA R UpperArm/WomanA R Forearm/WomanA
+          R Hand/WomanA R Finger1/WomanA R Finger11/WomanA R Finger1Nub
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: WomanA Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: WomanA R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: WomanA@idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WomanA Bip01
+      parentName: 
+      position: {x: -0.007873554, y: 1.023461, z: -0.015277259}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: WomanA Pelvis
+      parentName: 
+      position: {x: 0.006410067, y: 0, z: -0.000000076293944}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: WomanA Spine
+      parentName: 
+      position: {x: -0.040809173, y: 0.022187762, z: 0.0000008547306}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: WomanA L Thigh
+      parentName: 
+      position: {x: 0.042233504, y: -0.024838578, z: 0.092036396}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: WomanA L Calf
+      parentName: 
+      position: {x: -0.42413384, y: -0.0000000047683715, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: WomanA L Foot
+      parentName: 
+      position: {x: -0.4135571, y: -0.0000000047683715, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.9999999, z: 0.9999999}
+    - name: WomanA L Toe0
+      parentName: 
+      position: {x: -0.18704373, y: 0.13423981, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: WomanA L Toe0Nub
+      parentName: 
+      position: {x: -0.11079106, y: -3.7252902e-11, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: WomanA R Thigh
+      parentName: 
+      position: {x: 0.03749199, y: -0.022785563, z: -0.094587535}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: WomanA R Calf
+      parentName: 
+      position: {x: -0.4241339, y: -0.0000000047683715, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: WomanA R Foot
+      parentName: 
+      position: {x: -0.41355726, y: 0.0000000023841857, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: WomanA R Toe0
+      parentName: 
+      position: {x: -0.18704373, y: 0.13423981, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: WomanA R Toe0Nub
+      parentName: 
+      position: {x: -0.11079105, y: -1.4901161e-10, z: 0.000000014305114}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WomanA Spine1
+      parentName: 
+      position: {x: -0.101964034, y: -0.000057053563, z: 0.0000002002716}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WomanA Spine2
+      parentName: 
+      position: {x: -0.071796566, y: -0.00012432098, z: 0.0000006008148}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: WomanA Spine3
+      parentName: 
+      position: {x: -0.1563913, y: -0.00006087303, z: 0.00000016748905}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 1, z: 1}
+    - name: WomanA Neck
+      parentName: 
+      position: {x: -0.07248199, y: -0.024933066, z: 0.000010582208}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999976}
+    - name: WomanA Head
+      parentName: 
+      position: {x: -0.0751857, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: WomanA HeadNub
+      parentName: 
+      position: {x: -0.20527114, y: 0.0000000023841857, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: WomanA talk chin
+      parentName: 
+      position: {x: -0.057509, y: 0.017112816, z: 0.000000002980232}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.8807082, y: 0.8807083, z: 0.8807081}
+    - name: WomanA talk lower lip01
+      parentName: 
+      position: {x: -0.10765709, y: 0.0000016784668, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.75635713, y: 1.0000001, z: 1}
+    - name: WomanA talk lower lip02
+      parentName: 
+      position: {x: -0.04208679, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: WomanA talk mouth l01
+      parentName: 
+      position: {x: -0.09057556, y: 0.05051836, z: 0.052121714}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: WomanA talk mouth l02
+      parentName: 
+      position: {x: -0.0641732, y: 0.000000076293944, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WomanA talk mouth r01
+      parentName: 
+      position: {x: -0.090575404, y: 0.050518483, z: -0.05134995}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1.0000001, z: -1.0000001}
+    - name: WomanA talk mouth r02
+      parentName: 
+      position: {x: -0.0641732, y: 0.000000076293944, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WomanA talk upper lip01
+      parentName: 
+      position: {x: -0.067129366, y: 0.09871936, z: 0.0010172421}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.65102077, y: 0.6510209, z: 0.65102094}
+    - name: WomanA talk upper lip02
+      parentName: 
+      position: {x: -0.021383362, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.9999999}
+    - name: WomanA X_l01
+      parentName: 
+      position: {x: -0.11081527, y: 0.01689612, z: 0.027685361}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.85611475, y: 0.6063836, z: 0.65422696}
+    - name: WomanA X_l02
+      parentName: 
+      position: {x: -0.07626404, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.68193907, y: 0.99999994, z: 1.0000001}
+    - name: WomanA X_r01
+      parentName: 
+      position: {x: -0.11080001, y: 0.016950551, z: -0.030416073}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.8561147, y: 0.6063834, z: 0.65422696}
+    - name: WomanA X_r02
+      parentName: 
+      position: {x: -0.076264076, y: 0, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.681939, y: 1.0000001, z: 1.0000001}
+    - name: WomanA Z_l01
+      parentName: 
+      position: {x: -0.10233383, y: 0.059203137, z: 0.031748928}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.7304752, y: 0.9999999, z: 1.0000001}
+    - name: WomanA Z_l02
+      parentName: 
+      position: {x: -0.035369873, y: -0.00000061035155, z: -0.000000007152557}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.47608858, y: 1, z: 1}
+    - name: WomanA Z_r01
+      parentName: 
+      position: {x: -0.10238403, y: 0.059185676, z: -0.029912056}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.7304751, y: 0.9999998, z: 0.99999994}
+    - name: WomanA Z_r02
+      parentName: 
+      position: {x: -0.03536972, y: -0.0000009155273, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.4760886, y: 1.0000001, z: 1}
+    - name: WomanA L Clavicle
+      parentName: 
+      position: {x: -0.00061309815, y: -0.014814529, z: 0.05284899}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: WomanA L UpperArm
+      parentName: 
+      position: {x: -0.07012016, y: 0, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: WomanA L Forearm
+      parentName: 
+      position: {x: -0.26071882, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: WomanA L Hand
+      parentName: 
+      position: {x: -0.22809151, y: 0.000000019073486, z: -0.000000076293944}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: WomanA L Finger0
+      parentName: 
+      position: {x: -0.050252836, y: 0.012083778, z: -0.039446764}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999964}
+    - name: WomanA L Finger01
+      parentName: 
+      position: {x: -0.03200386, y: 0.000000038146972, z: -0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: WomanA L Finger0Nub
+      parentName: 
+      position: {x: -0.03594223, y: 0.0000000047683715, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: WomanA L Finger1
+      parentName: 
+      position: {x: -0.10282859, y: -0.0016704559, z: 0.0023520375}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.99999994}
+    - name: WomanA L Finger11
+      parentName: 
+      position: {x: -0.03449913, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: WomanA L Finger1Nub
+      parentName: 
+      position: {x: -0.053332213, y: -0.000000019073486, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 0.99999994}
+    - name: WomanA R Clavicle
+      parentName: 
+      position: {x: -0.0053797914, y: 0.004494972, z: -0.054461382}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1.0000001, y: 1.0000001, z: 0.99999994}
+    - name: WomanA R UpperArm
+      parentName: 
+      position: {x: -0.07012016, y: 0, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 0.9999998, z: 1}
+    - name: WomanA R Forearm
+      parentName: 
+      position: {x: -0.2607189, y: 0, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: WomanA R Hand
+      parentName: 
+      position: {x: -0.22809142, y: -0.000000019073486, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 0.99999994, y: 1, z: 1.0000001}
+    - name: WomanA R Finger0
+      parentName: 
+      position: {x: -0.05025276, y: 0.01208374, z: 0.039446745}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1, y: 0.99999994, z: 0.99999964}
+    - name: WomanA R Finger01
+      parentName: 
+      position: {x: -0.032003935, y: 0.000000076293944, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: WomanA R Finger0Nub
+      parentName: 
+      position: {x: -0.035942305, y: -0.000000009536743, z: -0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: WomanA R Finger1
+      parentName: 
+      position: {x: -0.10282859, y: -0.0016705322, z: -0.0023520612}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: WomanA R Finger11
+      parentName: 
+      position: {x: -0.034499206, y: -0.000000019073486, z: -0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: WomanA R Finger1Nub
+      parentName: 
+      position: {x: -0.053332213, y: 0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -0.99999994, y: -0.99999994, z: -0.99999994}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

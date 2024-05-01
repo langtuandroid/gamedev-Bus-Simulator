@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 181e6e6d79140af4db2ca89a10c2ab8d
+timeCreated: 1467109928
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ManA Bip01
+    100004: ManA BODY
+    100006: ManA Eye_L
+    100008: ManA Eye_R
+    100010: ManA Footsteps
+    100012: ManA HEAD
+    100014: ManA Head
+    100016: ManA HeadNub
+    100018: ManA L Calf
+    100020: ManA L Clavicle
+    100022: ManA L Finger0
+    100024: ManA L Finger01
+    100026: ManA L Finger0Nub
+    100028: ManA L Finger1
+    100030: ManA L Finger11
+    100032: ManA L Finger1Nub
+    100034: ManA L Foot
+    100036: ManA L Forearm
+    100038: ManA L Hand
+    100040: ManA L Thigh
+    100042: ManA L Toe0
+    100044: ManA L Toe0Nub
+    100046: ManA L UpperArm
+    100048: ManA Neck
+    100050: ManA Pelvis
+    100052: ManA R Calf
+    100054: ManA R Clavicle
+    100056: ManA R Finger0
+    100058: ManA R Finger01
+    100060: ManA R Finger0Nub
+    100062: ManA R Finger1
+    100064: ManA R Finger11
+    100066: ManA R Finger1Nub
+    100068: ManA R Foot
+    100070: ManA R Forearm
+    100072: ManA R Hand
+    100074: ManA R Thigh
+    100076: ManA R Toe0
+    100078: ManA R Toe0Nub
+    100080: ManA R UpperArm
+    100082: ManA Spine
+    100084: ManA Spine1
+    100086: ManA Spine2
+    100088: ManA Spine3
+    100090: ManA talk chin
+    100092: ManA talk lower lip01
+    100094: ManA talk lower lip02
+    100096: ManA talk mouth l01
+    100098: ManA talk mouth l02
+    100100: ManA talk mouth r01
+    100102: ManA talk mouth r02
+    100104: ManA talk upper lip01
+    100106: ManA talk upper lip02
+    100108: ManA X_l01
+    100110: ManA X_l02
+    100112: ManA X_r01
+    100114: ManA X_r02
+    100116: ManA Z_l01
+    100118: ManA Z_l02
+    100120: ManA Z_r01
+    100122: ManA Z_r02
+    400000: //RootNode
+    400002: ManA Bip01
+    400004: ManA BODY
+    400006: ManA Eye_L
+    400008: ManA Eye_R
+    400010: ManA Footsteps
+    400012: ManA HEAD
+    400014: ManA Head
+    400016: ManA HeadNub
+    400018: ManA L Calf
+    400020: ManA L Clavicle
+    400022: ManA L Finger0
+    400024: ManA L Finger01
+    400026: ManA L Finger0Nub
+    400028: ManA L Finger1
+    400030: ManA L Finger11
+    400032: ManA L Finger1Nub
+    400034: ManA L Foot
+    400036: ManA L Forearm
+    400038: ManA L Hand
+    400040: ManA L Thigh
+    400042: ManA L Toe0
+    400044: ManA L Toe0Nub
+    400046: ManA L UpperArm
+    400048: ManA Neck
+    400050: ManA Pelvis
+    400052: ManA R Calf
+    400054: ManA R Clavicle
+    400056: ManA R Finger0
+    400058: ManA R Finger01
+    400060: ManA R Finger0Nub
+    400062: ManA R Finger1
+    400064: ManA R Finger11
+    400066: ManA R Finger1Nub
+    400068: ManA R Foot
+    400070: ManA R Forearm
+    400072: ManA R Hand
+    400074: ManA R Thigh
+    400076: ManA R Toe0
+    400078: ManA R Toe0Nub
+    400080: ManA R UpperArm
+    400082: ManA Spine
+    400084: ManA Spine1
+    400086: ManA Spine2
+    400088: ManA Spine3
+    400090: ManA talk chin
+    400092: ManA talk lower lip01
+    400094: ManA talk lower lip02
+    400096: ManA talk mouth l01
+    400098: ManA talk mouth l02
+    400100: ManA talk mouth r01
+    400102: ManA talk mouth r02
+    400104: ManA talk upper lip01
+    400106: ManA talk upper lip02
+    400108: ManA X_l01
+    400110: ManA X_l02
+    400112: ManA X_r01
+    400114: ManA X_r02
+    400116: ManA Z_l01
+    400118: ManA Z_l02
+    400120: ManA Z_r01
+    400122: ManA Z_r02
+    2300000: ManA Eye_L
+    2300002: ManA Eye_R
+    3300000: ManA Eye_L
+    3300002: ManA Eye_R
+    4300000: ManA HEAD
+    4300002: ManA BODY
+    4300004: ManA Eye_L
+    4300006: ManA Eye_R
+    9500000: //RootNode
+    13700000: ManA BODY
+    13700002: ManA HEAD
+  materials:
+    importMaterials: 1
+    materialName: 1
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 3
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: ManA Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManA R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: ManA(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManA Bip01
+      parentName: 
+      position: {x: 0.000000019629663, y: 0.84867054, z: -0.0042902166}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: ManA Footsteps
+      parentName: 
+      position: {x: -0, y: 0, z: -0.8529321}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManA Pelvis
+      parentName: 
+      position: {x: 0.0064088497, y: -6.838974e-13, z: 0.0301615}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+    - name: ManA Spine
+      parentName: 
+      position: {x: -0.056557234, y: -0.0043061865, z: 0.00000009474519}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: ManA L Thigh
+      parentName: 
+      position: {x: 0.056553725, y: 0.0043509994, z: 0.09356812}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 1.0000002, y: 0.9999999, z: 1.0000002}
+    - name: ManA L Calf
+      parentName: 
+      position: {x: -0.35697833, y: -0.0000000011920929, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ManA L Foot
+      parentName: 
+      position: {x: -0.40121713, y: 0.0000000011920929, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000001, z: 0.99999994}
+    - name: ManA L Toe0
+      parentName: 
+      position: {x: -0.09504306, y: 0.11294761, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 0.9999997, y: 0.99999976, z: 1.0000002}
+    - name: ManA L Toe0Nub
+      parentName: 
+      position: {x: -0.07085562, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.0000001, y: -1, z: -1.0000001}
+    - name: ManA R Thigh
+      parentName: 
+      position: {x: 0.056553725, y: 0.004351519, z: -0.09356812}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999997, y: 1.0000001, z: 0.9999997}
+    - name: ManA R Calf
+      parentName: 
+      position: {x: -0.35697836, y: 0, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: ManA R Foot
+      parentName: 
+      position: {x: -0.4012171, y: -0.0000000011920929, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.9999999}
+    - name: ManA R Toe0
+      parentName: 
+      position: {x: -0.09504306, y: 0.112947606, z: 0}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000004, y: 1, z: 1.0000001}
+    - name: ManA R Toe0Nub
+      parentName: 
+      position: {x: -0.07085562, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManA Spine1
+      parentName: 
+      position: {x: -0.16502556, y: -0.00012343167, z: -3.4235198e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ManA Spine2
+      parentName: 
+      position: {x: -0.1550843, y: -0.0001231134, z: -3.4146522e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000004, z: 1.0000001}
+    - name: ManA Spine3
+      parentName: 
+      position: {x: -0.15472701, y: -0.0001200819, z: -3.3307515e-10}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 0.99999994, z: 1}
+    - name: ManA Neck
+      parentName: 
+      position: {x: -0.13659546, y: 0.0051440666, z: -0.000000015074146}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: ManA Head
+      parentName: 
+      position: {x: -0.07605072, y: -0.000000038146972, z: -1.4551915e-13}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999964, y: 0.9999997, z: 0.99999976}
+    - name: ManA Eye_L
+      parentName: 
+      position: {x: -0.108431086, y: 0.07773227, z: 0.030761715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.1164844, y: 1.1164845, z: 1.1164844}
+    - name: ManA Eye_R
+      parentName: 
+      position: {x: -0.108431086, y: 0.07773237, z: -0.030004727}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1.1164839, y: -1.1164846, z: -1.1164844}
+    - name: ManA HeadNub
+      parentName: 
+      position: {x: -0.2122113, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: ManA talk chin
+      parentName: 
+      position: {x: -0.061256256, y: 0.024500739, z: -0.00013214849}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.96593404, y: 0.90930843, z: 0.9365703}
+    - name: ManA talk lower lip01
+      parentName: 
+      position: {x: -0.10765701, y: 0.0000015258788, z: 0.00000000918284}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.72816306, y: 0.6717847, z: 0.99999994}
+    - name: ManA talk lower lip02
+      parentName: 
+      position: {x: -0.04208679, y: -0.000000076293944, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9997308, y: 1.000766, z: 1.0000002}
+    - name: ManA talk mouth l01
+      parentName: 
+      position: {x: -0.085430756, y: 0.060594168, z: 0.0518447}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.9999999}
+    - name: ManA talk mouth l02
+      parentName: 
+      position: {x: -0.0641732, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.9999995, z: 1}
+    - name: ManA talk mouth r01
+      parentName: 
+      position: {x: -0.0854306, y: 0.06059436, z: -0.05162712}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1.0000001, z: -1.0000001}
+    - name: ManA talk mouth r02
+      parentName: 
+      position: {x: -0.064173125, y: 0.000000076293944, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.9999998, z: 0.99999976}
+    - name: ManA talk upper lip01
+      parentName: 
+      position: {x: -0.06411804, y: 0.115444355, z: 0.00009248121}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.72096145, y: 0.7209616, z: 0.7209613}
+    - name: ManA talk upper lip02
+      parentName: 
+      position: {x: -0.021383362, y: 0.000000076293944, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.99999994}
+    - name: ManA X_l01
+      parentName: 
+      position: {x: -0.115072474, y: 0.029140363, z: 0.022738146}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.99999976}
+    - name: ManA X_l02
+      parentName: 
+      position: {x: -0.07308334, y: 0.00000045776366, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ManA X_r01
+      parentName: 
+      position: {x: -0.115072474, y: 0.029140415, z: -0.0244721}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1, z: 0.9999997}
+    - name: ManA X_r02
+      parentName: 
+      position: {x: -0.07308338, y: 0.00000030517577, z: 0.00000000834465}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: ManA Z_l01
+      parentName: 
+      position: {x: -0.103665315, y: 0.065120496, z: 0.032406107}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.90362805, y: 0.9999998, z: 1.0000001}
+    - name: ManA Z_l02
+      parentName: 
+      position: {x: -0.034631956, y: -0.00000061035155, z: -0.00000006198883}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.54988015, y: 0.9999997, z: 1.0000001}
+    - name: ManA Z_r01
+      parentName: 
+      position: {x: -0.103683315, y: 0.06511433, z: -0.032303777}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9036279, y: 0.9999999, z: 0.99999964}
+    - name: ManA Z_r02
+      parentName: 
+      position: {x: -0.03463165, y: -0.00000045776366, z: -0.000000030994414}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.5498801, y: 1.0000001, z: 0.99999994}
+    - name: ManA L Clavicle
+      parentName: 
+      position: {x: 0.045048065, y: 0.000098037715, z: 0.076795444}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 0.9999997, y: 0.9999998, z: 1}
+    - name: ManA L UpperArm
+      parentName: 
+      position: {x: -0.12911007, y: 0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ManA L Forearm
+      parentName: 
+      position: {x: -0.28685018, y: -0.000000007152557, z: 0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.9999998, z: 0.9999997}
+    - name: ManA L Hand
+      parentName: 
+      position: {x: -0.23095828, y: 0.0000000047683715, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+    - name: ManA L Finger0
+      parentName: 
+      position: {x: -0.04648918, y: 0.009888, z: -0.04263466}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 1, y: 1.0000002, z: 0.99999946}
+    - name: ManA L Finger01
+      parentName: 
+      position: {x: -0.025832977, y: 0, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.9999997, z: 1}
+    - name: ManA L Finger0Nub
+      parentName: 
+      position: {x: -0.02324642, y: 0, z: 0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: ManA L Finger1
+      parentName: 
+      position: {x: -0.086705126, y: -0.012712707, z: -0.0021258544}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 1.0000001}
+    - name: ManA L Finger11
+      parentName: 
+      position: {x: -0.027616272, y: -0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 1.0000002, z: 1.0000002}
+    - name: ManA L Finger1Nub
+      parentName: 
+      position: {x: -0.0526017, y: 0, z: -0.000000007152557}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: ManA R Clavicle
+      parentName: 
+      position: {x: 0.045048065, y: 0.000098457334, z: -0.07679538}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1, y: 0.9999997, z: 0.99999964}
+    - name: ManA R UpperArm
+      parentName: 
+      position: {x: -0.12911007, y: 0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999997, y: 0.99999976, z: 0.99999994}
+    - name: ManA R Forearm
+      parentName: 
+      position: {x: -0.28685024, y: 0.0000000023841857, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000001, z: 0.99999994}
+    - name: ManA R Hand
+      parentName: 
+      position: {x: -0.23095825, y: -0.0000000047683715, z: 0.00000015258789}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 0.9999997, z: 1}
+    - name: ManA R Finger0
+      parentName: 
+      position: {x: -0.046489295, y: 0.009888, z: 0.042634666}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: ManA R Finger01
+      parentName: 
+      position: {x: -0.025832977, y: 0, z: 0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999964, y: 0.9999996, z: 0.9999997}
+    - name: ManA R Finger0Nub
+      parentName: 
+      position: {x: -0.02324642, y: 0, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -0.99999994}
+    - name: ManA R Finger1
+      parentName: 
+      position: {x: -0.08670521, y: -0.012712707, z: 0.0021258593}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000005, z: 0.99999994}
+    - name: ManA R Finger11
+      parentName: 
+      position: {x: -0.027616156, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.9999997, z: 1}
+    - name: ManA R Finger1Nub
+      parentName: 
+      position: {x: -0.0526017, y: 0, z: 0.0000000047683715}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -0.99999994, y: -0.9999999, z: -0.99999994}
+    - name: ManA BODY
+      parentName: 
+      position: {x: -0.0009218549, y: 0.9988967, z: -0.012753296}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 4.14751, y: 4.14751, z: 4.14751}
+    - name: ManA HEAD
+      parentName: 
+      position: {x: 0.000005478117, y: 1.4823898, z: 0.0021651946}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.067725, y: 1.067725, z: 1.067725}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 1
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

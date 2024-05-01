@@ -1,0 +1,763 @@
+fileFormatVersion: 2
+guid: 8fd510df5886a3c4aa17353bc83f0595
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: ManD Bip01
+    100002: ManD Head
+    100004: ManD HeadNub
+    100006: ManD L Calf
+    100008: ManD L Clavicle
+    100010: ManD L Finger0
+    100012: ManD L Finger01
+    100014: ManD L Finger0Nub
+    100016: ManD L Finger1
+    100018: ManD L Finger11
+    100020: ManD L Finger1Nub
+    100022: ManD L Foot
+    100024: ManD L Forearm
+    100026: ManD L Hand
+    100028: ManD L Thigh
+    100030: ManD L Toe0
+    100032: ManD L Toe0Nub
+    100034: ManD L UpperArm
+    100036: ManD Neck
+    100038: ManD Pelvis
+    100040: ManD R Calf
+    100042: ManD R Clavicle
+    100044: ManD R Finger0
+    100046: ManD R Finger01
+    100048: ManD R Finger0Nub
+    100050: ManD R Finger1
+    100052: ManD R Finger11
+    100054: ManD R Finger1Nub
+    100056: ManD R Foot
+    100058: ManD R Forearm
+    100060: ManD R Hand
+    100062: ManD R Thigh
+    100064: ManD R Toe0
+    100066: ManD R Toe0Nub
+    100068: ManD R UpperArm
+    100070: ManD Spine
+    100072: ManD Spine1
+    100074: ManD Spine2
+    100076: ManD Spine3
+    100078: ManD talk chin
+    100080: //RootNode
+    400000: ManD Bip01
+    400002: ManD Head
+    400004: ManD HeadNub
+    400006: ManD L Calf
+    400008: ManD L Clavicle
+    400010: ManD L Finger0
+    400012: ManD L Finger01
+    400014: ManD L Finger0Nub
+    400016: ManD L Finger1
+    400018: ManD L Finger11
+    400020: ManD L Finger1Nub
+    400022: ManD L Foot
+    400024: ManD L Forearm
+    400026: ManD L Hand
+    400028: ManD L Thigh
+    400030: ManD L Toe0
+    400032: ManD L Toe0Nub
+    400034: ManD L UpperArm
+    400036: ManD Neck
+    400038: ManD Pelvis
+    400040: ManD R Calf
+    400042: ManD R Clavicle
+    400044: ManD R Finger0
+    400046: ManD R Finger01
+    400048: ManD R Finger0Nub
+    400050: ManD R Finger1
+    400052: ManD R Finger11
+    400054: ManD R Finger1Nub
+    400056: ManD R Foot
+    400058: ManD R Forearm
+    400060: ManD R Hand
+    400062: ManD R Thigh
+    400064: ManD R Toe0
+    400066: ManD R Toe0Nub
+    400068: ManD R UpperArm
+    400070: ManD Spine
+    400072: ManD Spine1
+    400074: ManD Spine2
+    400076: ManD Spine3
+    400078: ManD talk chin
+    400080: //RootNode
+    7400000: idle
+    9500000: //RootNode
+    11100000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'ManD@idle' has import animation warnings that
+      might lower retargeting quality:\n\t'ManD Spine2' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'ManD Spine3' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 1
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: idle
+      takeName: ManD@idle
+      firstFrame: 0
+      lastFrame: 348
+      wrapMode: 1
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: ManD Bip01
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD L Thigh
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD L Thigh/ManD L Calf
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD L Thigh/ManD L Calf/ManD L Foot
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD L Thigh/ManD L Calf/ManD L Foot/ManD
+          L Toe0
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD L Thigh/ManD L Calf/ManD L Foot/ManD
+          L Toe0/ManD L Toe0Nub
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD R Thigh
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD R Thigh/ManD R Calf
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD R Thigh/ManD R Calf/ManD R Foot
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD R Thigh/ManD R Calf/ManD R Foot/ManD
+          R Toe0
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD R Thigh/ManD R Calf/ManD R Foot/ManD
+          R Toe0/ManD R Toe0Nub
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD Head
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD Head/ManD HeadNub
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD Head/ManD talk chin
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm/ManD L Hand
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm/ManD L Hand/ManD L Finger0
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm/ManD L Hand/ManD L Finger0/ManD
+          L Finger01
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm/ManD L Hand/ManD L Finger0/ManD
+          L Finger01/ManD L Finger0Nub
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm/ManD L Hand/ManD L Finger1
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm/ManD L Hand/ManD L Finger1/ManD
+          L Finger11
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD L Clavicle/ManD L UpperArm/ManD L Forearm/ManD L Hand/ManD L Finger1/ManD
+          L Finger11/ManD L Finger1Nub
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm/ManD R Hand
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm/ManD R Hand/ManD R Finger0
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm/ManD R Hand/ManD R Finger0/ManD
+          R Finger01
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm/ManD R Hand/ManD R Finger0/ManD
+          R Finger01/ManD R Finger0Nub
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm/ManD R Hand/ManD R Finger1
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm/ManD R Hand/ManD R Finger1/ManD
+          R Finger11
+        weight: 1
+      - path: ManD Bip01/ManD Pelvis/ManD Spine/ManD Spine1/ManD Spine2/ManD Spine3/ManD
+          Neck/ManD R Clavicle/ManD R UpperArm/ManD R Forearm/ManD R Hand/ManD R Finger1/ManD
+          R Finger11/ManD R Finger1Nub
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.01
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 0
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human:
+    - boneName: ManD Pelvis
+      humanName: Hips
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Thigh
+      humanName: LeftUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Thigh
+      humanName: RightUpperLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Calf
+      humanName: LeftLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Calf
+      humanName: RightLowerLeg
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Foot
+      humanName: LeftFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Foot
+      humanName: RightFoot
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD Spine
+      humanName: Spine
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD Spine1
+      humanName: Chest
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD Neck
+      humanName: Neck
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD Head
+      humanName: Head
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Clavicle
+      humanName: LeftShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Clavicle
+      humanName: RightShoulder
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L UpperArm
+      humanName: LeftUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R UpperArm
+      humanName: RightUpperArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Forearm
+      humanName: LeftLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Forearm
+      humanName: RightLowerArm
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Hand
+      humanName: LeftHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Hand
+      humanName: RightHand
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Toe0
+      humanName: LeftToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Toe0
+      humanName: RightToes
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Finger0
+      humanName: Left Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Finger01
+      humanName: Left Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Finger1
+      humanName: Left Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD L Finger11
+      humanName: Left Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Finger0
+      humanName: Right Thumb Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Finger01
+      humanName: Right Thumb Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Finger1
+      humanName: Right Index Proximal
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: ManD R Finger11
+      humanName: Right Index Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    skeleton:
+    - name: ManD@idle(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManD Bip01
+      parentName: 
+      position: {x: 0.0064812847, y: 0.96146864, z: -0.03663308}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManD Pelvis
+      parentName: 
+      position: {x: 0.006410112, y: 0, z: 0}
+      rotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: ManD Spine
+      parentName: 
+      position: {x: -0.09796859, y: -0.000087165834, z: -0.00000017881393}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: ManD L Thigh
+      parentName: 
+      position: {x: 0.0991494, y: -0.00069764134, z: 0.103666395}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999999, y: 1, z: 1.0000001}
+    - name: ManD L Calf
+      parentName: 
+      position: {x: -0.43447426, y: 0.000000009536743, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ManD L Foot
+      parentName: 
+      position: {x: -0.41760314, y: -0.0000000126659865, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.99999994}
+    - name: ManD L Toe0
+      parentName: 
+      position: {x: -0.10482761, y: 0.10097412, z: 0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: ManD L Toe0Nub
+      parentName: 
+      position: {x: -0.11079107, y: 5.9604643e-10, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -0.99999994, y: -0.9999999, z: -0.99999994}
+    - name: ManD R Thigh
+      parentName: 
+      position: {x: 0.09676353, y: -0.001443777, z: -0.10588879}
+      rotation: {x: 0, y: 1, z: 0, w: -0.00000004371139}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1.0000001}
+    - name: ManD R Calf
+      parentName: 
+      position: {x: -0.4344742, y: 0.0000000023841857, z: 0.000000019073486}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1}
+    - name: ManD R Foot
+      parentName: 
+      position: {x: -0.41760322, y: 0.000000002980232, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1, z: 0.99999994}
+    - name: ManD R Toe0
+      parentName: 
+      position: {x: -0.10482761, y: 0.10097412, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: -0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManD R Toe0Nub
+      parentName: 
+      position: {x: -0.11079104, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: ManD Spine1
+      parentName: 
+      position: {x: -0.109529264, y: -0.00007961273, z: -0.0000023722648}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: ManD Spine2
+      parentName: 
+      position: {x: -0.100080796, y: -0.00008095741, z: -0.000002131462}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: ManD Spine3
+      parentName: 
+      position: {x: -0.10315269, y: -0.000084686275, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999998, y: 0.99999994, z: 0.9999999}
+    - name: ManD Neck
+      parentName: 
+      position: {x: -0.10471848, y: -0.010913811, z: -0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999976, y: 0.9999999, z: 0.9999998}
+    - name: ManD Head
+      parentName: 
+      position: {x: -0.096352234, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: ManD HeadNub
+      parentName: 
+      position: {x: -0.2122113, y: -0.000000009536743, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: ManD talk chin
+      parentName: 
+      position: {x: -0.06866226, y: 0.030255822, z: 0.00000016212464}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1}
+    - name: ManD L Clavicle
+      parentName: 
+      position: {x: -0.0023712157, y: -0.0017925262, z: 0.06442429}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: -0.7071068, w: 0.000000030908623}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManD L UpperArm
+      parentName: 
+      position: {x: -0.1208938, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1.0000001}
+    - name: ManD L Forearm
+      parentName: 
+      position: {x: -0.27715144, y: -0.00000015258789, z: -0.000000009536743}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 0.99999994, z: 0.99999994}
+    - name: ManD L Hand
+      parentName: 
+      position: {x: -0.28944007, y: -0.000000076293944, z: -0.000000009536743}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: -0.7071068}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: ManD L Finger0
+      parentName: 
+      position: {x: -0.04844017, y: 0.01730156, z: -0.032495804}
+      rotation: {x: 0, y: 0.3826835, z: 0, w: -0.9238795}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: ManD L Finger01
+      parentName: 
+      position: {x: -0.034345437, y: -0.000000076293944, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.99999994}
+    - name: ManD L Finger0Nub
+      parentName: 
+      position: {x: -0.041081656, y: -0.000000076293944, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManD L Finger1
+      parentName: 
+      position: {x: -0.09816078, y: 0.00055094715, z: 0.0030996704}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.9999999, y: 0.99999994, z: 1.0000001}
+    - name: ManD L Finger11
+      parentName: 
+      position: {x: -0.048703782, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: ManD L Finger1Nub
+      parentName: 
+      position: {x: -0.052601736, y: 0.000000038146972, z: -0.000000076293944}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: ManD R Clavicle
+      parentName: 
+      position: {x: -0.0014717102, y: -0.0018991089, z: -0.064447984}
+      rotation: {x: 0.7071068, y: -0.000000030908623, z: 0.7071068, w: -0.000000030908623}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: ManD R UpperArm
+      parentName: 
+      position: {x: -0.12089383, y: 0, z: -0.00000015258789}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: ManD R Forearm
+      parentName: 
+      position: {x: -0.2771515, y: -0.00000015258789, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000001}
+    - name: ManD R Hand
+      parentName: 
+      position: {x: -0.28944, y: -0.000000038146972, z: 0}
+      rotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ManD R Finger0
+      parentName: 
+      position: {x: -0.048440244, y: 0.017301578, z: 0.032495804}
+      rotation: {x: 0, y: 0.38268346, z: 0, w: 0.9238795}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.99999994}
+    - name: ManD R Finger01
+      parentName: 
+      position: {x: -0.03434551, y: 0.000000076293944, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: ManD R Finger0Nub
+      parentName: 
+      position: {x: -0.041081693, y: -0.000000038146972, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    - name: ManD R Finger1
+      parentName: 
+      position: {x: -0.098160855, y: 0.0005509567, z: -0.0030997465}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: ManD R Finger11
+      parentName: 
+      position: {x: -0.048703805, y: 0, z: 0.000000038146972}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1}
+    - name: ManD R Finger1Nub
+      parentName: 
+      position: {x: -0.052601736, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: -1, y: -1, z: -1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 1
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 3
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

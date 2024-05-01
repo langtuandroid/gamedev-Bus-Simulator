@@ -1,0 +1,115 @@
+fileFormatVersion: 2
+guid: bc9b4b6f030e645448818bb92d579a1b
+timeCreated: 1474894721
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: _CombinedMeshBridge
+    100002: _CombinedMeshBridge001
+    100004: _CombinedMeshTunnel
+    100006: DOM_B
+    100008: DOM_C
+    100010: DOMB_A
+    100012: DOMB_A001
+    100014: terrain
+    100016: //RootNode
+    400000: _CombinedMeshBridge
+    400002: _CombinedMeshBridge001
+    400004: _CombinedMeshTunnel
+    400006: DOM_B
+    400008: DOM_C
+    400010: DOMB_A
+    400012: DOMB_A001
+    400014: terrain
+    400016: //RootNode
+    2300000: _CombinedMeshBridge
+    2300002: _CombinedMeshBridge001
+    2300004: _CombinedMeshTunnel
+    2300006: DOM_B
+    2300008: DOM_C
+    2300010: DOMB_A
+    2300012: DOMB_A001
+    2300014: terrain
+    3300000: _CombinedMeshBridge
+    3300002: _CombinedMeshBridge001
+    3300004: _CombinedMeshTunnel
+    3300006: DOM_B
+    3300008: DOM_C
+    3300010: DOMB_A
+    3300012: DOMB_A001
+    3300014: terrain
+    4300000: DOMB_A001
+    4300002: terrain
+    4300004: DOMB_A
+    4300006: DOM_C
+    4300008: DOM_B
+    4300010: _CombinedMeshTunnel
+    4300012: _CombinedMeshBridge001
+    4300014: _CombinedMeshBridge
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
