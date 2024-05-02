@@ -29,6 +29,7 @@ public class MissionHandler : MonoBehaviour
 			passanger [i].transform.position = passanger_pos [i].transform.position;
 			passanger [i].transform.rotation = passanger_pos [i].transform.rotation;
 		}
+		GameManager.Instance.bus_stops.Clear ();
 		switch (GameManager.Instance.mission_no) {
 		case 0:												//Mission Number 1
 			for (int i = 0; i < passanger.Length; i++) {

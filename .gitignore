@@ -6,6 +6,9 @@
 # Log files
 *.log
 
+*.tif
+*.tif.meta
+
 # JetBrains IDE
 .idea/
 

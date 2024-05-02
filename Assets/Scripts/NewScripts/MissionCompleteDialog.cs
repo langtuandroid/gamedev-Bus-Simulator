@@ -77,6 +77,7 @@ public class MissionCompleteDialog : MonoBehaviour {
 			SceneManager.LoadScene ("NewMenu");
 			break;
 		case "Next":
+			if (GameManager.Instance.mission_no + 1 >= gameController.levels.Length) break;
 			int count = GameManager.Instance.bus_stops.Count;
 			for (int i = 0; i < count; i++) {
 				Destroy (GameManager.Instance.bus_stops [0]);			    

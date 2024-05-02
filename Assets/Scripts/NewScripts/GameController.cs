@@ -199,7 +199,7 @@ public class GameController : MonoBehaviour
 		float bus_speed = rigid.velocity.magnitude / 1000;
 		if (fuel > 0) {
 			if (bus_speed > 0.005) {
-				fuel -= (bus_speed * fuel_cusmption_rate);
+				fuel -= (bus_speed * fuel_cusmption_rate) * (Time.deltaTime * 20);
 				fuel_bar.fillAmount = fuel / 100;
 			}
 			if (fuel < 30 && is_allow) {

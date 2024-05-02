@@ -111,7 +111,9 @@ public class BusController : MonoBehaviour {
 		anim.SetBool ("DoorOpen",false);		
 		GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.None;
 		GetComponent<RCC_CarControllerV3> ().canControl = true;		
-		gameController.carCamera.gameObject.GetComponent<RCC_Camera> ().enabled = true;
+		var camera = gameController.carCamera.gameObject.GetComponent<RCC_Camera>();
+		camera.enabled = true;
+		if (camera.cameraMode != RCC_Camera.CameraMode.TPS) camera.ChangeCamera();
 		countBusStop += 1;
 		if (missionHandler.last_stop != parkingPos.gameObject.name) {
 			GameManager.Instance.bus_stops [countBusStop].SetActive (true);
@@ -122,7 +124,9 @@ public class BusController : MonoBehaviour {
 			for (int i = 0; i < seats.Length; i++) {
 				tempSeats.Add (seats [i]);
 			}
-			missionHandler= gameController.levels [GameManager.Instance.mission_no+1].GetComponent<MissionHandler> ();
+
+			if (GameManager.Instance.mission_no + 1 < gameController.levels.Length)
+				missionHandler = gameController.levels[GameManager.Instance.mission_no + 1].GetComponent<MissionHandler>();
 			countBusStop = 0;
 		}
 	}

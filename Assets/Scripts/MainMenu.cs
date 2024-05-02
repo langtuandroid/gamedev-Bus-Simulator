@@ -37,6 +37,8 @@ public class MainMenu : MonoBehaviour
 	public GameObject unlockAllButton2;
 	public GameObject removeAdsButton2;
 	public GameObject inSufficientCashDialog;
+
+	private Text userEarningText;
 	void SetBlackScreen ()
 	{
 		black_image.SetActive (false);
@@ -503,17 +505,19 @@ public class MainMenu : MonoBehaviour
 		} else {
 			bus_index=PlayerPrefs.GetInt("SelectedBus");
 		}
+		IsLocked();
 		if(GameManager.Instance.isForGarage)
 		IsForGrage ();
 		//AdsManager.instance.ShowInterstitial ();
 		//		Adds.instance.LogGoogleAnalytics ();
 
+		userEarningText = GameObject.Find("UserEarningText").GetComponent<Text>();
 	}
 
 	void Update ()
 	{
 		earning_Text_Menu.text = "" + PlayerPrefs.GetInt ("UserEarning");
-		GameObject.Find ("UserEarningText").GetComponent<Text> ().text = "" + PlayerPrefs.GetInt ("UserEarning");
+		userEarningText.text = "" + PlayerPrefs.GetInt ("UserEarning");
 		if (Input.GetKeyDown (KeyCode.Escape)) {
 			exit_dialog.SetActive (true);
 			LeanTween.scale (exit_dialog, new Vector3 (1, 1, 1), 0.25f);
