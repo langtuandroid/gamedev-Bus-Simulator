@@ -11,22 +11,22 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[CustomEditor(typeof(RCC_AIWaypointsContainer))]
+[CustomEditor(typeof(RCC_AIWaypointsContainerBSR))]
 public class RCC_AIWPEditor : Editor {
 	
-	RCC_AIWaypointsContainer wpScript;
+	RCC_AIWaypointsContainerBSR wpScript;
 	
 	public override void  OnInspectorGUI () {
 		
 		serializedObject.Update();
 		
-		wpScript = (RCC_AIWaypointsContainer)target;
+		wpScript = (RCC_AIWaypointsContainerBSR)target;
 			
 		if (GUILayout.Button ("Delete Waypoints")) {
-			foreach (Transform t in wpScript.waypoints) {
+			foreach (Transform t in wpScript.waypointsBSR) {
 				DestroyImmediate (t.gameObject);
 			}
-			wpScript.waypoints.Clear ();
+			wpScript.waypointsBSR.Clear ();
 		}
 			
 		EditorGUILayout.PropertyField(serializedObject.FindProperty("target"), new GUIContent("Target", "Target"), false);
@@ -41,7 +41,7 @@ public class RCC_AIWPEditor : Editor {
 	void OnSceneGUI(){
 
 		Event e = Event.current;
-		wpScript = (RCC_AIWaypointsContainer)target;
+		wpScript = (RCC_AIWaypointsContainerBSR)target;
 
 		if(e != null){
 
@@ -53,7 +53,7 @@ public class RCC_AIWPEditor : Editor {
 
 					Vector3 newTilePosition = hit.point;
 
-					GameObject wp = new GameObject("Waypoint " + wpScript.waypoints.Count.ToString());
+					GameObject wp = new GameObject("Waypoint " + wpScript.waypointsBSR.Count.ToString());
 
 					wp.transform.position = newTilePosition;
 					wp.transform.SetParent(wpScript.transform);
@@ -75,14 +75,14 @@ public class RCC_AIWPEditor : Editor {
 	
 	public void GetWaypoints(){
 		
-		wpScript.waypoints = new List<Transform>();
+		wpScript.waypointsBSR = new List<Transform>();
 		
 		Transform[] allTransforms = wpScript.transform.GetComponentsInChildren<Transform>();
 		
 		foreach(Transform t in allTransforms){
 			
 			if(t != wpScript.transform)
-				wpScript.waypoints.Add(t);
+				wpScript.waypointsBSR.Add(t);
 			
 		}
 		

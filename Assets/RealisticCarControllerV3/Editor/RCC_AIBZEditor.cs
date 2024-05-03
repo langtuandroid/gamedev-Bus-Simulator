@@ -11,22 +11,22 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-[CustomEditor(typeof(RCC_AIBrakeZonesContainer))]
+[CustomEditor(typeof(RCC_AIBrakeZonesContainerBSR))]
 public class RCC_AIBZEditor : Editor {
 	
-	RCC_AIBrakeZonesContainer bzScript;
+	RCC_AIBrakeZonesContainerBSR bzScript;
 	
 	public override void  OnInspectorGUI () {
 		
 		serializedObject.Update();
 		
-		bzScript = (RCC_AIBrakeZonesContainer)target;
+		bzScript = (RCC_AIBrakeZonesContainerBSR)target;
 
 		if(GUILayout.Button("Delete Brake Zones")){
-			foreach(Transform t in bzScript.brakeZones){
+			foreach(Transform t in bzScript.brakeZonesBSR){
 				DestroyImmediate(t.gameObject);
 			}
-			bzScript.brakeZones.Clear();
+			bzScript.brakeZonesBSR.Clear();
 		}
 
 		EditorGUILayout.PropertyField(serializedObject.FindProperty("brakeZones"), new GUIContent("Brake Zones", "Brake Zones"), true);
@@ -40,7 +40,7 @@ public class RCC_AIBZEditor : Editor {
 	void OnSceneGUI (){
 
 		Event e = Event.current;
-		bzScript = (RCC_AIBrakeZonesContainer)target;
+		bzScript = (RCC_AIBrakeZonesContainerBSR)target;
 
 		if(e != null){
 
@@ -52,10 +52,10 @@ public class RCC_AIBZEditor : Editor {
 
 					Vector3 newTilePosition = hit.point;
 
-					GameObject wp = new GameObject("Brake Zone " + bzScript.brakeZones.Count.ToString());
+					GameObject wp = new GameObject("Brake Zone " + bzScript.brakeZonesBSR.Count.ToString());
 
 					wp.transform.position = newTilePosition;
-					wp.AddComponent<RCC_AIBrakeZone>();
+					wp.AddComponent<RCC_AIBrakeZoneBSR>();
 					wp.AddComponent<BoxCollider>();
 					wp.GetComponent<BoxCollider>().isTrigger = true;
 					wp.GetComponent<BoxCollider>().size = new Vector3(25, 10, 50);
@@ -78,14 +78,14 @@ public class RCC_AIBZEditor : Editor {
 	
 	public void GetBrakeZones(){
 		
-		bzScript.brakeZones = new List<Transform>();
+		bzScript.brakeZonesBSR = new List<Transform>();
 		
 		Transform[] allTransforms = bzScript.transform.GetComponentsInChildren<Transform>();
 		
 		foreach(Transform t in allTransforms){
 			
 			if(t != bzScript.transform)
-				bzScript.brakeZones.Add(t);
+				bzScript.brakeZonesBSR.Add(t);
 			
 		}
 		

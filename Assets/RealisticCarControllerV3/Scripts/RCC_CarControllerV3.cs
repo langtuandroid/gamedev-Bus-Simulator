@@ -18,7 +18,7 @@ using UnityEngine.EventSystems;
 [RequireComponent (typeof(Rigidbody))]
 public class RCC_CarControllerV3 : MonoBehaviour {
 
-	private RCC_Settings RCCSettings{get{return RCC_Settings.Instance;}}		// Getting an Instance of Main Shared RCC Settings.
+	private RCC_SettingsBSR RCCSettings{get{return RCC_SettingsBSR.InstanceBSR;}}		// Getting an Instance of Main Shared RCC Settings.
 	private Rigidbody rigid;		// Rigidbody.
 	internal bool sleepingRigid = false;		// Used For Disabling Unnecessary Raycasts When RB Is Sleeping.
 
@@ -31,17 +31,17 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public Transform RearRightWheelTransform;
 	
 	// Wheel Colliders Of The Vehicle.
-	public RCC_WheelCollider FrontLeftWheelCollider;
-	public RCC_WheelCollider FrontRightWheelCollider;
-	public RCC_WheelCollider RearLeftWheelCollider;
-	public RCC_WheelCollider RearRightWheelCollider;
+	public RCC_WheelColliderBSR FrontLeftWheelCollider;
+	public RCC_WheelColliderBSR FrontRightWheelCollider;
+	public RCC_WheelColliderBSR RearLeftWheelCollider;
+	public RCC_WheelColliderBSR RearRightWheelCollider;
 
 	// All Wheel Colliders.
-	internal RCC_WheelCollider[] allWheelColliders;
+	internal RCC_WheelColliderBSR[] allWheelColliders;
 	
 	// Extra Wheels. In case of if your vehicle has extra wheels.
 	public Transform[] ExtraRearWheelsTransform;
-	public RCC_WheelCollider[] ExtraRearWheelsCollider;
+	public RCC_WheelColliderBSR[] ExtraRearWheelsCollider;
 	
 	public bool applyEngineTorqueToExtraRearWheelColliders = true;		//Applies Engine Torque To Extra Rear Wheels.
 
@@ -56,10 +56,10 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public Transform COM;		// Center of mass.
 	
 	public bool canControl = true;		// Enables/Disables controlling the vehicle.
-	public bool runEngineAtAwake{get{return RCCSettings.runEngineAtAwake;}}		// Engine Running At Awake?
+	public bool runEngineAtAwake{get{return RCCSettings.runEngineAtAwakeBSR;}}		// Engine Running At Awake?
 	public bool engineRunning = false;		// Engine Running Now?
-	public bool autoReverse{get{return RCCSettings.autoReverse;}}		// Enables / Disables auto reversing when player press brake button. Useful for if you are making parking style game.
-	public bool automaticGear{get{return RCCSettings.useAutomaticGear;}}	// Enables / Disables automatic gear shifting of the vehicle.
+	public bool autoReverse{get{return RCCSettings.autoReverseBSR;}}		// Enables / Disables auto reversing when player press brake button. Useful for if you are making parking style game.
+	public bool automaticGear{get{return RCCSettings.useAutomaticGearBSR;}}	// Enables / Disables automatic gear shifting of the vehicle.
 	public bool semiAutomaticGear = false;		// Enables / Disables automatic gear shifting of the vehicle.
 	//private bool automaticClutch = true;		// Enables / Disables automatic clutch of the vehicle.
 	private bool canGoReverseNow = false;
@@ -115,21 +115,21 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	private AudioSource gearShiftingSound;
 
 	// Shared AudioSources and AudioClips.
-	private AudioClip[] gearShiftingClips{get{return RCCSettings.gearShiftingClips;}}
+	private AudioClip[] gearShiftingClips{get{return RCCSettings.gearShiftingClipsBSR;}}
 	private AudioSource crashSound;
-	private AudioClip[] crashClips{get{return RCCSettings.crashClips;}}
+	private AudioClip[] crashClips{get{return RCCSettings.crashClipsBSR;}}
 	private AudioSource reversingSound;
-	private AudioClip reversingClip{get{return RCCSettings.reversingClip;}}
+	private AudioClip reversingClip{get{return RCCSettings.reversingClipBSR;}}
 	private AudioSource windSound;
-	private AudioClip windClip{get{return RCCSettings.windClip;}}
+	private AudioClip windClip{get{return RCCSettings.windClipBSR;}}
 	private AudioSource brakeSound;
-	private AudioClip brakeClip{get{return RCCSettings.brakeClip;}}
+	private AudioClip brakeClip{get{return RCCSettings.brakeClipBSR;}}
 	private AudioSource NOSSound;
-	private AudioClip NOSClip{get{return RCCSettings.NOSClip;}}
+	private AudioClip NOSClip{get{return RCCSettings.NOSClipBSR;}}
 	private AudioSource turboSound;
-	private AudioClip turboClip{get{return RCCSettings.turboClip;}}
+	private AudioClip turboClip{get{return RCCSettings.turboClipBSR;}}
 	private AudioSource blowSound;
-	private AudioClip blowClip{get{return RCCSettings.turboClip;}}
+	private AudioClip blowClip{get{return RCCSettings.turboClipBSR;}}
 
 	// Min / Max Sound Pitches and Volumes.
 	[Range(.25f, 1f)]public float minEngineSoundPitch = .75f;
@@ -228,7 +228,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	private float minimumCollisionForce = 5f;		// Minimum collision force.
 	public float damageMultiplier = 1f;		// Damage multiplier.
 	
-	public GameObject contactSparkle{get{return RCCSettings.contactParticles;}}		// Contact Particles for collisions. It must be Particle System.
+	public GameObject contactSparkle{get{return RCCSettings.contactParticlesBSR;}}		// Contact Particles for collisions. It must be Particle System.
 	public int maximumContactSparkle = 5;		//	Contact Particles will be ready to use for collisions in pool. 
 	private List<ParticleSystem> contactSparkeList = new List<ParticleSystem>();		// Array for Contact Particles.
 	public bool repairNow = false;		// Repair Now.
@@ -292,7 +292,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	public bool useNOS = false;
 	public bool useTurbo = false;
 
-	private RCC_Camera carCamera;
+	private RCC_CameraBSR carCamera;
 
 	// EVENTS
 
@@ -301,25 +301,25 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 	void Awake (){
 
-		if(RCCSettings.overrideFixedTimeStep)
-			Time.fixedDeltaTime = RCCSettings.fixedTimeStep;
+		if(RCCSettings.overrideFixedTimeStepBSR)
+			Time.fixedDeltaTime = RCCSettings.fixedTimeStepBSR;
 
 		rigid = GetComponent<Rigidbody>();
-		rigid.maxAngularVelocity = RCCSettings.maxAngularVelocity;
+		rigid.maxAngularVelocity = RCCSettings.maxAngularVelocityBSR;
 		rigid.drag = .05f;
 		rigid.angularDrag = .25f;
 
-		allWheelColliders = GetComponentsInChildren<RCC_WheelCollider>();
+		allWheelColliders = GetComponentsInChildren<RCC_WheelColliderBSR>();
 //		anyWheel = GetComponentInChildren<WheelCollider>();
 //		anyWheel.ConfigureVehicleSubsteps(10f, 2, 2);
 
-		FrontLeftWheelCollider.wheelModel = FrontLeftWheelTransform;
-		FrontRightWheelCollider.wheelModel = FrontRightWheelTransform;
-		RearLeftWheelCollider.wheelModel = RearLeftWheelTransform;
-		RearRightWheelCollider.wheelModel = RearRightWheelTransform;
+		FrontLeftWheelCollider.wheelModelBSR = FrontLeftWheelTransform;
+		FrontRightWheelCollider.wheelModelBSR = FrontRightWheelTransform;
+		RearLeftWheelCollider.wheelModelBSR = RearLeftWheelTransform;
+		RearRightWheelCollider.wheelModelBSR = RearRightWheelTransform;
 
 		for (int i = 0; i < ExtraRearWheelsCollider.Length; i++) {
-			ExtraRearWheelsCollider[i].wheelModel = ExtraRearWheelsTransform[i];
+			ExtraRearWheelsCollider[i].wheelModelBSR = ExtraRearWheelsTransform[i];
 		}
 
 		orgSteerAngle = steerAngle;
@@ -327,7 +327,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		allContactParticles = new GameObject("All Contact Particles");
 		allContactParticles.transform.SetParent(transform, false);
 
-		if(GetComponent<RCC_AICarController>())
+		if(GetComponent<RCC_AICarControllerBSR>())
 			AIController = true;
 
 		if(autoGenerateGearCurves)
@@ -342,13 +342,13 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			KillOrStartEngine();
 
 		if (chassis) {
-			if (!chassis.GetComponent<RCC_Chassis> ())
-				chassis.AddComponent<RCC_Chassis> ();
+			if (!chassis.GetComponent<RCC_ChassisBSR> ())
+				chassis.AddComponent<RCC_ChassisBSR> ();
 		}
 
-		switch(RCCSettings.behaviorType){
+		switch(RCCSettings.behaviorTypeBSR){
 
-		case RCC_Settings.BehaviorType.SemiArcade:
+		case RCC_SettingsBSR.BehaviorType.SemiArcade:
 			steeringHelper = true;
 			tractionHelper = true;
 			ABS = false;
@@ -362,7 +362,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			gearShiftingDelay = Mathf.Clamp(gearShiftingDelay, 0f, .1f);
 			break;
 
-		case RCC_Settings.BehaviorType.Drift:
+		case RCC_SettingsBSR.BehaviorType.Drift:
 			steeringHelper = false;
 			//tractionHelper = false;
 			ABS = false;
@@ -377,7 +377,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			gearShiftingDelay = Mathf.Clamp(gearShiftingDelay, 0f, .15f);
 			break;
 
-		case RCC_Settings.BehaviorType.Fun:
+		case RCC_SettingsBSR.BehaviorType.Fun:
 			steeringHelper = true;
 			tractionHelper = true;
 			ABS = false;
@@ -392,7 +392,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			gearShiftingDelay = Mathf.Clamp(gearShiftingDelay, 0f, .1f);
 			break;
 
-		case RCC_Settings.BehaviorType.Racing:
+		case RCC_SettingsBSR.BehaviorType.Racing:
 			steeringHelper = true;
 			tractionHelper = true;
 			steerHelperLinearVelStrength = Mathf.Clamp(steerHelperLinearVelStrength, .25f, 1f);
@@ -402,26 +402,26 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			antiRollRearHorizontal = Mathf.Clamp(antiRollRearHorizontal, 10000f, Mathf.Infinity);
 			break;
 
-		case RCC_Settings.BehaviorType.Simulator:
+		case RCC_SettingsBSR.BehaviorType.Simulator:
 			antiRollFrontHorizontal = Mathf.Clamp(antiRollFrontHorizontal, 2500f, Mathf.Infinity);
 			antiRollRearHorizontal = Mathf.Clamp(antiRollRearHorizontal, 2500f, Mathf.Infinity);
 			break;
 
 		}
 
-		carCamera = GameObject.FindObjectOfType<RCC_Camera> ();
+		carCamera = GameObject.FindObjectOfType<RCC_CameraBSR> ();
 
 	}
 
 	void OnEnable(){
 
 		if(!AIController&&canControl){
-			if(RCC_Settings.Instance.controllerType == RCC_Settings.ControllerType.Mobile){
-				GameObject.FindObjectOfType<RCC_MobileButtons>().GetVehicles();
+			if(RCC_SettingsBSR.InstanceBSR.controllerTypeBSR == RCC_SettingsBSR.ControllerType.Mobile){
+				GameObject.FindObjectOfType<RCC_MobileButtonsBSR>().GetVehiclesBSR();
 			}
 
-			if(GameObject.FindObjectOfType<RCC_DashboardInputs>())
-				GameObject.FindObjectOfType<RCC_DashboardInputs>().GetVehicle(this);
+			if(GameObject.FindObjectOfType<RCC_DashboardInputsBSR>())
+				GameObject.FindObjectOfType<RCC_DashboardInputsBSR>().GetVehicleBSR(this);
 		}
 
 		changingGear = false;
@@ -473,7 +473,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			}
 
 			wheelcollider.GetComponent<WheelCollider>().radius = (biggestBound.extents.y) / transform.localScale.y;
-			wheelcollider.AddComponent<RCC_WheelCollider>();
+			wheelcollider.AddComponent<RCC_WheelColliderBSR>();
 			JointSpring spring = wheelcollider.GetComponent<WheelCollider>().suspensionSpring;
 
 			spring.spring = 40000f;
@@ -509,15 +509,15 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		}
 		
-		RCC_WheelCollider[] allWheelColliders = new RCC_WheelCollider[allWheelModels.Count];
-		allWheelColliders = GetComponentsInChildren<RCC_WheelCollider>();
+		RCC_WheelColliderBSR[] allWheelColliders = new RCC_WheelColliderBSR[allWheelModels.Count];
+		allWheelColliders = GetComponentsInChildren<RCC_WheelColliderBSR>();
 		
 		FrontLeftWheelCollider = allWheelColliders[0];
 		FrontRightWheelCollider = allWheelColliders[1];
 		RearLeftWheelCollider = allWheelColliders[2];
 		RearRightWheelCollider = allWheelColliders[3];
 
-		ExtraRearWheelsCollider = new RCC_WheelCollider[ExtraRearWheelsTransform.Length];
+		ExtraRearWheelsCollider = new RCC_WheelColliderBSR[ExtraRearWheelsTransform.Length];
 
 		for (int i = 0; i < ExtraRearWheelsTransform.Length; i++) {
 			ExtraRearWheelsCollider [i] = allWheelColliders [i + 4];
@@ -527,21 +527,21 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	
 	void SoundsInitialize (){
 
-		engineSoundOn = RCC_CreateAudioSource.NewAudioSource(gameObject, "Engine Sound On AudioSource", 5, 100, 0, engineClipOn, true, true, false);
-		engineSoundOff = RCC_CreateAudioSource.NewAudioSource(gameObject, "Engine Sound Off AudioSource", 5, 100, 0, engineClipOff, true, true, false);
-		engineSoundIdle = RCC_CreateAudioSource.NewAudioSource(gameObject, "Engine Sound Idle AudioSource", 5, 100, 0, engineClipIdle, true, true, false);
+		engineSoundOn = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Engine Sound On AudioSource", 5, 100, 0, engineClipOn, true, true, false);
+		engineSoundOff = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Engine Sound Off AudioSource", 5, 100, 0, engineClipOff, true, true, false);
+		engineSoundIdle = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Engine Sound Idle AudioSource", 5, 100, 0, engineClipIdle, true, true, false);
 
-		reversingSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Reverse Sound AudioSource", 1, 10, 0, reversingClip, true, false, false);
-		windSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Wind Sound AudioSource", 1, 10, 0, windClip, true, true, false);
-		brakeSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Brake Sound AudioSource", 1, 10, 0, brakeClip, true, true, false);
+		reversingSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Reverse Sound AudioSource", 1, 10, 0, reversingClip, true, false, false);
+		windSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Wind Sound AudioSource", 1, 10, 0, windClip, true, true, false);
+		brakeSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Brake Sound AudioSource", 1, 10, 0, brakeClip, true, true, false);
 
 		if(useNOS)
-			NOSSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
+			NOSSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
 		if(useNOS || useTurbo)
-			blowSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Blow", 1, 10, 1, null, false, false, false);
+			blowSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "NOS Blow", 1, 10, 1, null, false, false, false);
 		if(useTurbo){
-			turboSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Turbo Sound AudioSource", .1f, .5f, 0, turboClip, true, true, false);
-			RCC_CreateAudioSource.NewHighPassFilter(turboSound, 10000f, 10);
+			turboSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Turbo Sound AudioSource", .1f, .5f, 0, turboClip, true, true, false);
+			RCC_CreateAudioSourceBSR.NewHighPassFilterBSR(turboSound, 10000f, 10);
 		}
 		
 	}
@@ -561,7 +561,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		engineRunning = false;
 		engineStarting = true;
-		engineStartSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Engine Start AudioSource", 5, 10, 1, engineStartClip, false, true, true);
+		engineStartSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Engine Start AudioSource", 5, 10, 1, engineStartClip, false, true, true);
 		if(engineStartSound.isPlaying)
 			engineStartSound.Play();
 		yield return new WaitForSeconds(1f);
@@ -717,44 +717,44 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 	void Inputs(){
 		
-		switch(RCCSettings.controllerType){
+		switch(RCCSettings.controllerTypeBSR){
 
-		case RCC_Settings.ControllerType.Keyboard:
+		case RCC_SettingsBSR.ControllerType.Keyboard:
 			
-			gasInput = Input.GetAxis(RCCSettings.verticalInput);
-			brakeInput = Mathf.Clamp01(-Input.GetAxis(RCCSettings.verticalInput));
-			handbrakeInput = Input.GetKey(RCCSettings.handbrakeKB) ? 1f : 0f;
-			steerInput = Input.GetAxis(RCCSettings.horizontalInput);
-			boostInput = Input.GetKey(RCCSettings.boostKB) ? 2.5f : 1f;
+			gasInput = Input.GetAxis(RCCSettings.verticalInputBSR);
+			brakeInput = Mathf.Clamp01(-Input.GetAxis(RCCSettings.verticalInputBSR));
+			handbrakeInput = Input.GetKey(RCCSettings.handbrakeKBBSR) ? 1f : 0f;
+			steerInput = Input.GetAxis(RCCSettings.horizontalInputBSR);
+			boostInput = Input.GetKey(RCCSettings.boostKBBSR) ? 2.5f : 1f;
 
-			if(Input.GetKeyDown(RCCSettings.lowBeamHeadlightsKB)){
+			if(Input.GetKeyDown(RCCSettings.lowBeamHeadlightsKBBSR)){
 				lowBeamHeadLightsOn = !lowBeamHeadLightsOn;
 			}
 
-			if(Input.GetKeyDown(RCCSettings.highBeamHeadlightsKB)){
+			if(Input.GetKeyDown(RCCSettings.highBeamHeadlightsKBBSR)){
 				highBeamHeadLightsOn = true;
-			}else if(Input.GetKeyUp(RCCSettings.highBeamHeadlightsKB)){
+			}else if(Input.GetKeyUp(RCCSettings.highBeamHeadlightsKBBSR)){
 				highBeamHeadLightsOn = false;
 			}
 
-			if(Input.GetKeyDown(RCCSettings.startEngineKB))
+			if(Input.GetKeyDown(RCCSettings.startEngineKBBSR))
 				KillOrStartEngine();
 
-			if(Input.GetKeyDown(RCCSettings.rightIndicatorKB)){
+			if(Input.GetKeyDown(RCCSettings.rightIndicatorKBBSR)){
 				if(indicatorsOn != IndicatorsOn.Right)
 					indicatorsOn = IndicatorsOn.Right;
 				else
 					indicatorsOn = IndicatorsOn.Off;
 			}
 
-			if(Input.GetKeyDown(RCCSettings.leftIndicatorKB)){
+			if(Input.GetKeyDown(RCCSettings.leftIndicatorKBBSR)){
 				if(indicatorsOn != IndicatorsOn.Left)
 					indicatorsOn = IndicatorsOn.Left;
 				else
 					indicatorsOn = IndicatorsOn.Off;
 			}
 
-			if(Input.GetKeyDown(RCCSettings.hazardIndicatorKB)){
+			if(Input.GetKeyDown(RCCSettings.hazardIndicatorKBBSR)){
 				if(indicatorsOn != IndicatorsOn.All){
 					indicatorsOn = IndicatorsOn.Off;
 					indicatorsOn = IndicatorsOn.All;
@@ -766,7 +766,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			if(!automaticGear){
 
 				if(currentGear < totalGears - 1 && !changingGear){
-					if(Input.GetKeyDown(RCCSettings.shiftGearUp)){
+					if(Input.GetKeyDown(RCCSettings.shiftGearUpBSR)){
 						if(direction != -1)
 							StartCoroutine("ChangingGear", currentGear + 1);
 						else
@@ -775,7 +775,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 				}
 
 				if(currentGear >= 0){
-					if(Input.GetKeyDown(RCCSettings.shiftGearDown)){
+					if(Input.GetKeyDown(RCCSettings.shiftGearDownBSR)){
 						StartCoroutine("ChangingGear", currentGear - 1);	
 					}
 				}
@@ -806,14 +806,14 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			TractionHelper();
 
 		if(ESP)
-			ESPCheck(rigid.angularVelocity.y, FrontLeftWheelCollider.steerAngle);
+			ESPCheck(rigid.angularVelocity.y, FrontLeftWheelCollider.steerAngleBSR);
 
 		if(autoGenerateGearCurves)
 			TorqueCurve();
 
-		if(RCCSettings.behaviorType == RCC_Settings.BehaviorType.Drift){
+		if(RCCSettings.behaviorTypeBSR == RCC_SettingsBSR.BehaviorType.Drift){
 			
-			if (RearLeftWheelCollider.isGrounded) {
+			if (RearLeftWheelCollider.isGroundedBSR) {
 				//rigid.angularVelocity = new Vector3(rigid.angularVelocity.x, rigid.angularVelocity.y + (direction * steerInput / 30f) + ((((steerInput * _gasInput)) * Mathf.Lerp(0f, 1f, 1f / Mathf.Clamp(speed - 30f, 0f, Mathf.Infinity))) / 30f), rigid.angularVelocity.z);
 				rigid.AddRelativeTorque (Vector3.up * (((steerInput * _gasInput) * 1f)), ForceMode.Acceleration); 
 			}
@@ -837,7 +837,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		//Driver SteeringWheel Transform.
 		if(SteeringWheel)
-			SteeringWheel.transform.rotation = transform.rotation * Quaternion.Euler(20, 0, (FrontLeftWheelCollider.steerAngle) * -6);
+			SteeringWheel.transform.rotation = transform.rotation * Quaternion.Euler(20, 0, (FrontLeftWheelCollider.steerAngleBSR) * -6);
 
 		if(rigid.velocity.magnitude < .01f && Mathf.Abs(steerInput) < .01f && Mathf.Abs(_gasInput) < .01f && Mathf.Abs(rigid.angularVelocity.magnitude) < .01f)
 			sleepingRigid = true;
@@ -846,7 +846,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		
 		rawEngineRPM = Mathf.Clamp(Mathf.MoveTowards(rawEngineRPM, 
 		                                             (maxEngineRPM * 1.1f) * 
-			(Mathf.Clamp01(Mathf.Lerp(0f, 1f, (1f - clutchInput) * ((((RearLeftWheelCollider.wheelRPMToSpeed + RearRightWheelCollider.wheelRPMToSpeed) * direction) / 2f) / gearSpeed[currentGear])) + (((_gasInput) * clutchInput) + idleInput)))
+			(Mathf.Clamp01(Mathf.Lerp(0f, 1f, (1f - clutchInput) * ((((RearLeftWheelCollider.wheelRPMToSpeedBSR + RearRightWheelCollider.wheelRPMToSpeedBSR) * direction) / 2f) / gearSpeed[currentGear])) + (((_gasInput) * clutchInput) + idleInput)))
 		                                             , engineInertia * 100f), 0f, maxEngineRPM * 1.1f);
 		rawEngineRPM *= fuelInput;
 
@@ -904,24 +904,24 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 	void Sounds(){
 
-		windSound.volume = Mathf.Lerp (0f, RCCSettings.maxWindSoundVolume, speed / 300f);
+		windSound.volume = Mathf.Lerp (0f, RCCSettings.maxWindSoundVolumeBSR, speed / 300f);
 		windSound.pitch = UnityEngine.Random.Range(.9f, 1f);
 		
 		if(direction == 1)
-			brakeSound.volume = Mathf.Lerp (0f, RCCSettings.maxBrakeSoundVolume, Mathf.Clamp01((FrontLeftWheelCollider.wheelCollider.brakeTorque + FrontRightWheelCollider.wheelCollider.brakeTorque) / (brakeTorque * 2f)) * Mathf.Lerp(0f, 1f, FrontLeftWheelCollider.rpm / 50f));
+			brakeSound.volume = Mathf.Lerp (0f, RCCSettings.maxBrakeSoundVolumeBSR, Mathf.Clamp01((FrontLeftWheelCollider.wheelColliderBSR.brakeTorque + FrontRightWheelCollider.wheelColliderBSR.brakeTorque) / (brakeTorque * 2f)) * Mathf.Lerp(0f, 1f, FrontLeftWheelCollider.rpmBSR / 50f));
 		else
 			brakeSound.volume = 0f;
 
 	}
 
-	void ApplyMotorTorque(RCC_WheelCollider wc, float torque){
+	void ApplyMotorTorque(RCC_WheelColliderBSR wc, float torque){
 
 		if(TCS){
 
 			WheelHit hit;
-			wc.wheelCollider.GetGroundHit(out hit);
+			wc.wheelColliderBSR.GetGroundHit(out hit);
 
-			if(Mathf.Abs(wc.rpm) >= 100){
+			if(Mathf.Abs(wc.rpmBSR) >= 100){
 				if(hit.forwardSlip > .25f){
 					TCSAct = true;
 					torque -= Mathf.Clamp(torque * (hit.forwardSlip) * TCSStrength, 0f, engineTorque);
@@ -938,27 +938,27 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		if(OverTorque())
 			torque = 0;
 
-		wc.wheelCollider.motorTorque = ((torque * (1 - clutchInput) * _boostInput) * _gasInput) * (engineTorqueCurve[currentGear].Evaluate(wc.wheelRPMToSpeed * direction) * direction);
+		wc.wheelColliderBSR.motorTorque = ((torque * (1 - clutchInput) * _boostInput) * _gasInput) * (engineTorqueCurve[currentGear].Evaluate(wc.wheelRPMToSpeedBSR * direction) * direction);
 
-		ApplyEngineSound(wc.wheelCollider.motorTorque);
+		ApplyEngineSound(wc.wheelColliderBSR.motorTorque);
 		
 	}
 
 	void ESPCheck(float velocity, float steering){
 
 		WheelHit frontHit1;
-		FrontLeftWheelCollider.wheelCollider.GetGroundHit(out frontHit1);
+		FrontLeftWheelCollider.wheelColliderBSR.GetGroundHit(out frontHit1);
 
 		WheelHit frontHit2;
-		FrontRightWheelCollider.wheelCollider.GetGroundHit(out frontHit2);
+		FrontRightWheelCollider.wheelColliderBSR.GetGroundHit(out frontHit2);
 
 		frontSlip = frontHit1.sidewaysSlip + frontHit2.sidewaysSlip;
 
 		WheelHit rearHit1;
-		RearLeftWheelCollider.wheelCollider.GetGroundHit(out rearHit1);
+		RearLeftWheelCollider.wheelColliderBSR.GetGroundHit(out rearHit1);
 
 		WheelHit rearHit2;
-		RearRightWheelCollider.wheelCollider.GetGroundHit(out rearHit2);
+		RearRightWheelCollider.wheelColliderBSR.GetGroundHit(out rearHit2);
 
 		rearSlip = rearHit1.sidewaysSlip + rearHit2.sidewaysSlip;
 
@@ -992,12 +992,12 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			
 	}
 
-	void ApplyBrakeTorque(RCC_WheelCollider wc, float brake){
+	void ApplyBrakeTorque(RCC_WheelColliderBSR wc, float brake){
 
 		if(ABS && handbrakeInput <= .1f){
 
 			WheelHit hit;
-			wc.wheelCollider.GetGroundHit(out hit);
+			wc.wheelColliderBSR.GetGroundHit(out hit);
 
 			if((Mathf.Abs(hit.forwardSlip) * Mathf.Clamp01(brake)) >= ABSThreshold){
 				ABSAct = true;
@@ -1008,16 +1008,16 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		}
 
-		wc.wheelCollider.brakeTorque = brake;
+		wc.wheelColliderBSR.brakeTorque = brake;
 
 	}
 
-	void ApplySteering(RCC_WheelCollider wc){
+	void ApplySteering(RCC_WheelColliderBSR wc){
 
 		if(applyCounterSteering && currentGear != 0)
-			wc.wheelCollider.steerAngle = Mathf.Clamp((steerAngle * (steerInput + driftAngle)), -steerAngle, steerAngle);
+			wc.wheelColliderBSR.steerAngle = Mathf.Clamp((steerAngle * (steerInput + driftAngle)), -steerAngle, steerAngle);
 		else
-			wc.wheelCollider.steerAngle = Mathf.Clamp((steerAngle * steerInput), -steerAngle, steerAngle);
+			wc.wheelColliderBSR.steerAngle = Mathf.Clamp((steerAngle * steerInput), -steerAngle, steerAngle);
 
 	}
 
@@ -1099,15 +1099,15 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		float travelFL = 1.0f;
 		float travelFR = 1.0f;
 		
-		bool groundedFL= FrontLeftWheelCollider.wheelCollider.GetGroundHit(out FrontWheelHit);
+		bool groundedFL= FrontLeftWheelCollider.wheelColliderBSR.GetGroundHit(out FrontWheelHit);
 		
 		if (groundedFL)
-			travelFL = (-FrontLeftWheelCollider.transform.InverseTransformPoint(FrontWheelHit.point).y - FrontLeftWheelCollider.wheelCollider.radius) / FrontLeftWheelCollider.wheelCollider.suspensionDistance;
+			travelFL = (-FrontLeftWheelCollider.transform.InverseTransformPoint(FrontWheelHit.point).y - FrontLeftWheelCollider.wheelColliderBSR.radius) / FrontLeftWheelCollider.wheelColliderBSR.suspensionDistance;
 		
-		bool groundedFR= FrontRightWheelCollider.wheelCollider.GetGroundHit(out FrontWheelHit);
+		bool groundedFR= FrontRightWheelCollider.wheelColliderBSR.GetGroundHit(out FrontWheelHit);
 		
 		if (groundedFR)
-			travelFR = (-FrontRightWheelCollider.transform.InverseTransformPoint(FrontWheelHit.point).y - FrontRightWheelCollider.wheelCollider.radius) / FrontRightWheelCollider.wheelCollider.suspensionDistance;
+			travelFR = (-FrontRightWheelCollider.transform.InverseTransformPoint(FrontWheelHit.point).y - FrontRightWheelCollider.wheelColliderBSR.radius) / FrontRightWheelCollider.wheelColliderBSR.suspensionDistance;
 		
 		float antiRollForceFrontHorizontal= (travelFL - travelFR) * antiRollFrontHorizontal;
 		
@@ -1121,15 +1121,15 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		float travelRL = 1.0f;
 		float travelRR = 1.0f;
 		
-		bool groundedRL= RearLeftWheelCollider.wheelCollider.GetGroundHit(out RearWheelHit);
+		bool groundedRL= RearLeftWheelCollider.wheelColliderBSR.GetGroundHit(out RearWheelHit);
 		
 		if (groundedRL)
-			travelRL = (-RearLeftWheelCollider.transform.InverseTransformPoint(RearWheelHit.point).y - RearLeftWheelCollider.wheelCollider.radius) / RearLeftWheelCollider.wheelCollider.suspensionDistance;
+			travelRL = (-RearLeftWheelCollider.transform.InverseTransformPoint(RearWheelHit.point).y - RearLeftWheelCollider.wheelColliderBSR.radius) / RearLeftWheelCollider.wheelColliderBSR.suspensionDistance;
 		
-		bool groundedRR= RearRightWheelCollider.wheelCollider.GetGroundHit(out RearWheelHit);
+		bool groundedRR= RearRightWheelCollider.wheelColliderBSR.GetGroundHit(out RearWheelHit);
 		
 		if (groundedRR)
-			travelRR = (-RearRightWheelCollider.transform.InverseTransformPoint(RearWheelHit.point).y - RearRightWheelCollider.wheelCollider.radius) / RearRightWheelCollider.wheelCollider.suspensionDistance;
+			travelRR = (-RearRightWheelCollider.transform.InverseTransformPoint(RearWheelHit.point).y - RearRightWheelCollider.wheelColliderBSR.radius) / RearRightWheelCollider.wheelColliderBSR.suspensionDistance;
 		
 		float antiRollForceRearHorizontal= (travelRL - travelRR) * antiRollRearHorizontal;
 		
@@ -1215,7 +1215,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		for (int i = 0; i < allWheelColliders.Length; i++){
 
 			WheelHit hit;
-			allWheelColliders[i].wheelCollider.GetGroundHit(out hit);
+			allWheelColliders[i].wheelColliderBSR.GetGroundHit(out hit);
 			if (hit.normal == Vector3.zero)
 				return;
 
@@ -1224,7 +1224,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		Vector3 v = rigid.angularVelocity;
 		velocityAngle = (v.y * Mathf.Clamp(transform.InverseTransformDirection(rigid.velocity).z, -1f, 1f)) * Mathf.Rad2Deg;
 		velocityDirection.localRotation = Quaternion.Lerp(velocityDirection.localRotation, Quaternion.AngleAxis(Mathf.Clamp(velocityAngle / 3f, -45f, 45f), Vector3.up), Time.fixedDeltaTime * 20f);
-		steeringDirection.localRotation = Quaternion.Euler (0f, FrontLeftWheelCollider.steerAngle, 0f);
+		steeringDirection.localRotation = Quaternion.Euler (0f, FrontLeftWheelCollider.steerAngleBSR, 0f);
 
 		int normalizer = 1;
 
@@ -1259,16 +1259,16 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		angularVelo = rigid.angularVelocity.y;
 
-		if (angle * FrontLeftWheelCollider.steerAngle < 0) {
-			FrontLeftWheelCollider.tractionHelpedSidewaysStiffness = (1f - Mathf.Clamp01 (tractionHelperStrength * Mathf.Abs (angularVelo)));
+		if (angle * FrontLeftWheelCollider.steerAngleBSR < 0) {
+			FrontLeftWheelCollider.tractionHelpedSidewaysStiffnessBSR = (1f - Mathf.Clamp01 (tractionHelperStrength * Mathf.Abs (angularVelo)));
 		} else {
-			FrontLeftWheelCollider.tractionHelpedSidewaysStiffness = 1f;
+			FrontLeftWheelCollider.tractionHelpedSidewaysStiffnessBSR = 1f;
 		}
 
-		if (angle * FrontRightWheelCollider.steerAngle < 0) {
-			FrontRightWheelCollider.tractionHelpedSidewaysStiffness = (1f - Mathf.Clamp01 (tractionHelperStrength * Mathf.Abs (angularVelo)));
+		if (angle * FrontRightWheelCollider.steerAngleBSR < 0) {
+			FrontRightWheelCollider.tractionHelpedSidewaysStiffnessBSR = (1f - Mathf.Clamp01 (tractionHelperStrength * Mathf.Abs (angularVelo)));
 		} else {
-			FrontRightWheelCollider.tractionHelpedSidewaysStiffness = 1f;
+			FrontRightWheelCollider.tractionHelpedSidewaysStiffnessBSR = 1f;
 		}
 
 	}
@@ -1282,7 +1282,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		if (speed <= 10f && !cutGas) {
 
-			clutchInput = Mathf.Lerp (clutchInput, (Mathf.Lerp (1f, (Mathf.Lerp (.2f, 0f, ((RearLeftWheelCollider.wheelRPMToSpeed + RearRightWheelCollider.wheelRPMToSpeed) / 2f) / (10))), Mathf.Abs (_gasInput))), Time.deltaTime * 50f);
+			clutchInput = Mathf.Lerp (clutchInput, (Mathf.Lerp (1f, (Mathf.Lerp (.2f, 0f, ((RearLeftWheelCollider.wheelRPMToSpeedBSR + RearRightWheelCollider.wheelRPMToSpeedBSR) / 2f) / (10))), Mathf.Abs (_gasInput))), Time.deltaTime * 50f);
 
 		} else if (!cutGas) {
 
@@ -1313,7 +1313,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		if(automaticGear){
 
 			if(currentGear < totalGears - 1 && !changingGear){
-				if(speed >= (gearSpeed[currentGear] * .7f) && FrontLeftWheelCollider.rpm > 0){
+				if(speed >= (gearSpeed[currentGear] * .7f) && FrontLeftWheelCollider.rpmBSR > 0){
 					if(!semiAutomaticGear)
 						StartCoroutine("ChangingGear", currentGear + 1);
 					else if(semiAutomaticGear && direction != -1)
@@ -1353,11 +1353,11 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 		changingGear = true;
 
-		if(RCCSettings.useTelemetry)
+		if(RCCSettings.useTelemetryBSR)
 			print ("Shifted to: " + (gear).ToString()); 
 
 		if(gearShiftingClips.Length > 0){
-			gearShiftingSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Gear Shifting AudioSource", 1f, 2f, RCCSettings.maxGearShiftingSoundVolume, gearShiftingClips[UnityEngine.Random.Range(0, gearShiftingClips.Length)], false, true, true);
+			gearShiftingSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Gear Shifting AudioSource", 1f, 2f, RCCSettings.maxGearShiftingSoundVolumeBSR, gearShiftingClips[UnityEngine.Random.Range(0, gearShiftingClips.Length)], false, true, true);
 			if(!gearShiftingSound.isPlaying)
 				gearShiftingSound.Play();
 		}
@@ -1391,10 +1391,10 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			return;
 
 		if(!NOSSound)
-			NOSSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
+			NOSSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "NOS Sound AudioSource", 5, 10, 1f, NOSClip, true, false, false);
 
 		if(!blowSound)
-			blowSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "NOS Blow", 1, 10, 1, null, false, false, false);
+			blowSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "NOS Blow", 1, 10, 1, null, false, false, false);
 
 		if(boostInput > 1.5f && _gasInput >= .8f && NoS > 5){
 			NoS -= NoSConsumption * Time.deltaTime;
@@ -1407,7 +1407,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			NoSRegenerateTime += Time.deltaTime;
 			if(NOSSound.isPlaying){
 				NOSSound.Stop();
-				blowSound.clip = RCCSettings.blowoutClip[UnityEngine.Random.Range(0, RCCSettings.blowoutClip.Length)];
+				blowSound.clip = RCCSettings.blowoutClipBSR[UnityEngine.Random.Range(0, RCCSettings.blowoutClipBSR.Length)];
 				blowSound.Play();
 			}
 		}
@@ -1420,8 +1420,8 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			return;
 
 		if (!turboSound) {
-			turboSound = RCC_CreateAudioSource.NewAudioSource (gameObject, "Turbo Sound AudioSource", .1f, .5f, 0, turboClip, true, true, false);
-			RCC_CreateAudioSource.NewHighPassFilter (turboSound, 10000f, 10);
+			turboSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR (gameObject, "Turbo Sound AudioSource", .1f, .5f, 0, turboClip, true, true, false);
+			RCC_CreateAudioSourceBSR.NewHighPassFilterBSR (turboSound, 10000f, 10);
 		}
 
 		turboBoost = Mathf.Lerp(turboBoost, Mathf.Clamp(Mathf.Pow(_gasInput, 10) * 30f + Mathf.Pow(engineRPM / maxEngineRPM, 10) * 30f, 0f, 30f), Time.deltaTime * 10f);
@@ -1429,7 +1429,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		if(turboBoost >= 25f){
 			if(turboBoost < (turboSound.volume * 30f)){
 				if(!blowSound.isPlaying){
-					blowSound.clip = RCCSettings.blowoutClip[UnityEngine.Random.Range(0, RCCSettings.blowoutClip.Length)];
+					blowSound.clip = RCCSettings.blowoutClipBSR[UnityEngine.Random.Range(0, RCCSettings.blowoutClipBSR.Length)];
 					blowSound.Play();
 				}
 			}
@@ -1444,7 +1444,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	void DriftVariables(){
 		
 		WheelHit hit;
-		RearRightWheelCollider.wheelCollider.GetGroundHit(out hit);
+		RearRightWheelCollider.wheelColliderBSR.GetGroundHit(out hit);
 		
 		if(speed > 1f && driftingNow)
 			driftAngle = hit.sidewaysSlip * .75f;
@@ -1482,7 +1482,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 			if(crashClips.Length > 0){
 				if (collision.contacts[0].thisCollider.gameObject.transform != transform.parent){
-					crashSound = RCC_CreateAudioSource.NewAudioSource(gameObject, "Crash Sound AudioSource", 5, 20, RCCSettings.maxCrashSoundVolume, crashClips[UnityEngine.Random.Range(0, crashClips.Length)], false, true, true);
+					crashSound = RCC_CreateAudioSourceBSR.NewAudioSourceBSR(gameObject, "Crash Sound AudioSource", 5, 20, RCCSettings.maxCrashSoundVolumeBSR, crashClips[UnityEngine.Random.Range(0, crashClips.Length)], false, true, true);
 				if(!crashSound.isPlaying)
 					crashSound.Play();
 				}
@@ -1515,15 +1515,15 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 		}
 
 		if(!AIController && carCamera){
-			if(carCamera.playerCar == transform)
-				carCamera.Collision(collision);
+			if(carCamera.playerCarBSR == transform)
+				carCamera.CollisionBSR(collision);
 		}
 
 	}
 	
 	void OnGUI (){
 
-		if(RCCSettings.useTelemetry && canControl){
+		if(RCCSettings.useTelemetryBSR && canControl){
 
 			GUI.skin.label.fontSize = 12;
 			GUI.skin.box.fontSize = 12;
@@ -1544,8 +1544,8 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 
 			
-			GUI.Label(new Rect(Screen.width - 390 - guiWidth, 30, 400, 150), "Speed " + (RCCSettings.units == RCC_Settings.Units.KMH ? "(KM/H)" : "(MP/H)") + Mathf.CeilToInt(speed));
-			GUI.Label(new Rect(Screen.width - 390 - guiWidth, 50, 400, 150), "Steer Angle : " + Mathf.CeilToInt(FrontLeftWheelCollider.steerAngle));
+			GUI.Label(new Rect(Screen.width - 390 - guiWidth, 30, 400, 150), "Speed " + (RCCSettings.unitsBSR == RCC_SettingsBSR.Units.KMH ? "(KM/H)" : "(MP/H)") + Mathf.CeilToInt(speed));
+			GUI.Label(new Rect(Screen.width - 390 - guiWidth, 50, 400, 150), "Steer Angle : " + Mathf.CeilToInt(FrontLeftWheelCollider.steerAngleBSR));
 			GUI.Label(new Rect(Screen.width - 390 - guiWidth, 70, 400, 150), "Automatic Shifting : " + (automaticGear == true ? "Automatic" : "Manual").ToString());
 
 //			if(!changingGear)
@@ -1559,30 +1559,30 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			GUI.Label(new Rect(Screen.width - 390 - guiWidth, 250, 400, 150), "Mobile Vertical Tilt : " + Input.acceleration.y);
 			
 			//Front Wheels
-			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 10, 400, 150), "Front Left Wheel RPM : " + Mathf.CeilToInt(FrontLeftWheelCollider.rpm));
-			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 10, 400, 150), "Front Right Wheel RPM : " + Mathf.CeilToInt(FrontRightWheelCollider.rpm));
-			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 30, 400, 150), "Front Left Wheel Torque : " + Mathf.CeilToInt(FrontLeftWheelCollider.wheelCollider.motorTorque));
-			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 30, 400, 150), "Front Right Wheel Torque : " + Mathf.CeilToInt(FrontRightWheelCollider.wheelCollider.motorTorque));
-			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 50, 400, 150), "Front Left Wheel brake : " + Mathf.CeilToInt(FrontLeftWheelCollider.wheelCollider.brakeTorque));
-			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 50, 400, 150), "Front Right Wheel brake : " + Mathf.CeilToInt(FrontRightWheelCollider.wheelCollider.brakeTorque));
+			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 10, 400, 150), "Front Left Wheel RPM : " + Mathf.CeilToInt(FrontLeftWheelCollider.rpmBSR));
+			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 10, 400, 150), "Front Right Wheel RPM : " + Mathf.CeilToInt(FrontRightWheelCollider.rpmBSR));
+			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 30, 400, 150), "Front Left Wheel Torque : " + Mathf.CeilToInt(FrontLeftWheelCollider.wheelColliderBSR.motorTorque));
+			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 30, 400, 150), "Front Right Wheel Torque : " + Mathf.CeilToInt(FrontRightWheelCollider.wheelColliderBSR.motorTorque));
+			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 50, 400, 150), "Front Left Wheel brake : " + Mathf.CeilToInt(FrontLeftWheelCollider.wheelColliderBSR.brakeTorque));
+			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 50, 400, 150), "Front Right Wheel brake : " + Mathf.CeilToInt(FrontRightWheelCollider.wheelColliderBSR.brakeTorque));
 			
 			WheelHit hit;
-			FrontLeftWheelCollider.wheelCollider.GetGroundHit(out hit);
+			FrontLeftWheelCollider.wheelColliderBSR.GetGroundHit(out hit);
 
 			//GUI.Label(new Rect(Screen.width - 200 - guiWidth, 190, 400, 150), "Speed: " + speed);
-			GUI.Label(new Rect(Screen.width - 200 - guiWidth, 210, 400, 150), "WCSpeed: " + RearLeftWheelCollider.wheelRPMToSpeed);
+			GUI.Label(new Rect(Screen.width - 200 - guiWidth, 210, 400, 150), "WCSpeed: " + RearLeftWheelCollider.wheelRPMToSpeedBSR);
 			GUI.Label(new Rect(Screen.width - 200 - guiWidth, 230, 400, 150), "UnderSteer: " + overSteering);
 			GUI.Label(new Rect(Screen.width - 200 - guiWidth, 250, 400, 150), "OverSteer: " + underSteering);
 			
-			if(FrontLeftWheelCollider.wheelCollider.GetGroundHit(out hit)){
+			if(FrontLeftWheelCollider.wheelColliderBSR.GetGroundHit(out hit)){
 				//GUI.Label(new Rect(Screen.width - 200 - guiWidth, 50, 400, 150), "Ground Material : " + _groundMaterial.ToString());
-				GUI.Label(new Rect(Screen.width - 200 - guiWidth, 70, 400, 150), "Ground Grip : " + FrontLeftWheelCollider.forwardFrictionCurve.stiffness);
+				GUI.Label(new Rect(Screen.width - 200 - guiWidth, 70, 400, 150), "Ground Grip : " + FrontLeftWheelCollider.forwardFrictionCurveBSR.stiffness);
 			}
 			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 70, 400, 150), "Front Left Wheel Force : " + Mathf.CeilToInt(hit.force));
 			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 90, 400, 150), "Front Left Wheel Sideways Grip : " + (1 - Mathf.Abs(hit.sidewaysSlip)).ToString("F2"));
 			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 110, 400, 150), "Front Left Wheel Forward Grip : " + (1 - Mathf.Abs(hit.forwardSlip)).ToString("F2"));
 			
-			FrontRightWheelCollider.wheelCollider.GetGroundHit(out hit);
+			FrontRightWheelCollider.wheelColliderBSR.GetGroundHit(out hit);
 			
 			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 70, 400, 150), "Front Right Wheel Force : " + Mathf.CeilToInt(hit.force));
 			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 90, 400, 150), "Front Right Wheel Sideways Grip : " + (1 - Mathf.Abs(hit.sidewaysSlip)).ToString("F2"));
@@ -1593,20 +1593,20 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 			GUI.Label(new Rect(Screen.width - 390 - guiWidth, 210, 400, 150), "ESP: " + ESP + ". Current State: " + (ESPAct == true ? "Engaged" : "Safe").ToString());
 			
 			//Rear Wheels
-			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 150, 400, 150), "Rear Left Wheel RPM : " + Mathf.CeilToInt(RearLeftWheelCollider.rpm));
-			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 150, 400, 150), "Rear Right Wheel RPM : " + Mathf.CeilToInt(RearRightWheelCollider.rpm));
-			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 170, 400, 150), "Rear Left Wheel Torque : " + Mathf.CeilToInt(RearLeftWheelCollider.wheelCollider.motorTorque));
-			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 170, 400, 150), "Rear Right Wheel Torque : " + Mathf.CeilToInt(RearRightWheelCollider.wheelCollider.motorTorque));
-			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 190, 400, 150), "Rear Left Wheel brake : " + Mathf.CeilToInt(RearLeftWheelCollider.wheelCollider.brakeTorque));
-			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 190, 400, 150), "Rear Right Wheel brake : " + Mathf.CeilToInt(RearRightWheelCollider.wheelCollider.brakeTorque));
+			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 150, 400, 150), "Rear Left Wheel RPM : " + Mathf.CeilToInt(RearLeftWheelCollider.rpmBSR));
+			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 150, 400, 150), "Rear Right Wheel RPM : " + Mathf.CeilToInt(RearRightWheelCollider.rpmBSR));
+			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 170, 400, 150), "Rear Left Wheel Torque : " + Mathf.CeilToInt(RearLeftWheelCollider.wheelColliderBSR.motorTorque));
+			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 170, 400, 150), "Rear Right Wheel Torque : " + Mathf.CeilToInt(RearRightWheelCollider.wheelColliderBSR.motorTorque));
+			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 190, 400, 150), "Rear Left Wheel brake : " + Mathf.CeilToInt(RearLeftWheelCollider.wheelColliderBSR.brakeTorque));
+			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 190, 400, 150), "Rear Right Wheel brake : " + Mathf.CeilToInt(RearRightWheelCollider.wheelColliderBSR.brakeTorque));
 			
-			RearLeftWheelCollider.wheelCollider.GetGroundHit(out hit);
+			RearLeftWheelCollider.wheelColliderBSR.GetGroundHit(out hit);
 			
 			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 210, 400, 150), "Rear Left Wheel Force : " + Mathf.CeilToInt(hit.force));
 			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 230, 400, 150), "Rear Left Wheel Sideways Grip : " + (1 - Mathf.Abs(hit.sidewaysSlip)).ToString("F2"));
 			GUI.Label(new Rect(Screen.width + 00 - guiWidth, 250, 400, 150), "Rear Left Wheel Forward Grip : " + (1 - Mathf.Abs(hit.forwardSlip)).ToString("F2"));
 			
-			RearRightWheelCollider.wheelCollider.GetGroundHit(out hit);
+			RearRightWheelCollider.wheelColliderBSR.GetGroundHit(out hit);
 			
 			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 210, 400, 150), "Rear Right Wheel Force : " + Mathf.CeilToInt(hit.force));
 			GUI.Label(new Rect(Screen.width + 200 - guiWidth, 230, 400, 150), "Rear Right Wheel Sideways Grip : " + (1 - Mathf.Abs(hit.sidewaysSlip)).ToString("F2"));
@@ -1642,7 +1642,7 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 
 			for(int i = 0; i < allWheelColliders.Length; i++){
 
-				allWheelColliders[i].wheelCollider.GetGroundHit(out hit);
+				allWheelColliders[i].wheelColliderBSR.GetGroundHit(out hit);
 
 				Matrix4x4 temp = Gizmos.matrix;
 				Gizmos.matrix = Matrix4x4.TRS(allWheelColliders[i].transform.position, Quaternion.AngleAxis(-90, Vector3.right), Vector3.one);
@@ -1718,8 +1718,8 @@ public class RCC_CarControllerV3 : MonoBehaviour {
 	void OnDisable(){
 
 		if(canControl){
-			if(gameObject.GetComponentInChildren<RCC_Camera>())
-				gameObject.GetComponentInChildren<RCC_Camera>().transform.SetParent(null);
+			if(gameObject.GetComponentInChildren<RCC_CameraBSR>())
+				gameObject.GetComponentInChildren<RCC_CameraBSR>().transform.SetParent(null);
 			}
 
 	}

@@ -19,8 +19,8 @@ public class RCC_EnterExitCarEditor : Editor {
 
 		for(int i = 0; i < selectedGameObjects.Length; i++){
 		
-			if(!selectedGameObjects[i].GetComponent<RCC_EnterExitCar>() && selectedGameObjects[i].GetComponent<RCC_CarControllerV3>()){
-				selectedGameObjects[i].AddComponent<RCC_EnterExitCar>();
+			if(!selectedGameObjects[i].GetComponent<RCC_EnterExitCarBSR>() && selectedGameObjects[i].GetComponent<RCC_CarControllerV3>()){
+				selectedGameObjects[i].AddComponent<RCC_EnterExitCarBSR>();
 			}else if(selectedGameObjects[i].GetComponent<RCC_CarControllerV3>()){	
 				EditorUtility.DisplayDialog("Your Vehicle Already Has Enter-Exit Script", "Your Vehicle Named " + "''" + selectedGameObjects[i].name + "''"  + " Already Has Enter-Exit Script", "Ok");
 			}else if(!selectedGameObjects[i].GetComponent<RCC_CarControllerV3>()){
@@ -44,16 +44,16 @@ public class RCC_EnterExitCarEditor : Editor {
 
 		GameObject selectedGameObject = Selection.activeGameObject;
 
-		if(!selectedGameObject.GetComponentInChildren<RCC_EnterExitPlayer>()){
+		if(!selectedGameObject.GetComponentInChildren<RCC_EnterExitPlayerBSR>()){
 			if(selectedGameObject.GetComponentInChildren<Camera>() == null){
 				EditorUtility.DisplayDialog("Your Player Named " +  "''" + selectedGameObject.name + "''" + " Has Not Any Camera", "Your Player Has Not Any Camera", "Ok");
 				return;
 			}
 			Camera cam = selectedGameObject.GetComponentInChildren<Camera>();
-			if (cam.gameObject.GetComponent<RCC_EnterExitPlayer> ()) {
+			if (cam.gameObject.GetComponent<RCC_EnterExitPlayerBSR> ()) {
 				EditorUtility.DisplayDialog ("Your Player Already Has Enter-Exit Script", "Your Player Named " + "''" + selectedGameObject.name + "''" + " Already Has Enter-Exit Script", "Ok");
 			} else {
-				cam.gameObject.AddComponent<RCC_EnterExitPlayer> ();
+				cam.gameObject.AddComponent<RCC_EnterExitPlayerBSR> ();
 			}
 		}else{
 			EditorUtility.DisplayDialog("Your Player Already Has Enter-Exit Script", "Your Player Named " + "''" + selectedGameObject.name + "''" + " Already Has Enter-Exit Script", "Ok");
@@ -74,10 +74,10 @@ public class RCC_EnterExitCarEditor : Editor {
 
 		GameObject selectedGameObject = Selection.activeGameObject;
 
-		if(!selectedGameObject.GetComponentInChildren<RCC_EnterExitPlayer>()){
+		if(!selectedGameObject.GetComponentInChildren<RCC_EnterExitPlayerBSR>()){
 			
-			selectedGameObject.AddComponent<RCC_EnterExitPlayer>();
-			selectedGameObject.GetComponent<RCC_EnterExitPlayer>().playerType = RCC_EnterExitPlayer.PlayerType.TPS;
+			selectedGameObject.AddComponent<RCC_EnterExitPlayerBSR>();
+			selectedGameObject.GetComponent<RCC_EnterExitPlayerBSR>().playerTypeBSR = RCC_EnterExitPlayerBSR.PlayerType.TPS;
 
 		}else{
 			EditorUtility.DisplayDialog("Your Player Already Has Enter-Exit Script", "Your Player Named " + "''" + selectedGameObject.name + "''" + " Already Has Enter-Exit Script", "Ok");

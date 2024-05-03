@@ -42,8 +42,8 @@ public class RCC_MirrorsSetupEditor : Editor {
 
 	static void CreateMirrors () {
 
-		if(!selectedCar.transform.GetComponentInChildren<RCC_Mirror>()){
-			GameObject mirrors = (GameObject)Instantiate(RCC_Settings.Instance.mirrors, selectedCar.transform.position, selectedCar.transform.rotation);
+		if(!selectedCar.transform.GetComponentInChildren<RCC_MirrorBSR>()){
+			GameObject mirrors = (GameObject)Instantiate(RCC_SettingsBSR.InstanceBSR.mirrorsBSR, selectedCar.transform.position, selectedCar.transform.rotation);
 			mirrors.transform.SetParent(selectedCar.GetComponent<RCC_CarControllerV3>().chassis.transform, true);
 			mirrors.name = "Mirrors";
 			RCC_LabelEditor.SetIcon(mirrors.transform.GetChild(0).gameObject, RCC_LabelEditor.Icon.DiamondRed);

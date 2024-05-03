@@ -14,12 +14,12 @@ public class RCC_EditorWindows : Editor {
 	
 	[MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Edit RCC Settings", false, 0)]
 	public static void OpenRCCSettings(){
-		Selection.activeObject =RCC_Settings.Instance;
+		Selection.activeObject =RCC_SettingsBSR.InstanceBSR;
 	}
 
 	[MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Configure Ground Materials", false, 2)]
 	public static void OpenGroundMaterialsSettings(){
-		Selection.activeObject =RCC_GroundMaterials.Instance;
+		Selection.activeObject =RCC_GroundMaterialsBSR.InstanceBsr;
 	}
 
 	[MenuItem("Tools/BoneCracker Games/Realistic Car Controller/Misc/Add Hood Camera To Vehicle", false, 3)]
@@ -31,9 +31,9 @@ public class RCC_EditorWindows : Editor {
 
 		}else{
 
-			if(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().gameObject.GetComponentInChildren<RCC_HoodCamera>()){
+			if(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().gameObject.GetComponentInChildren<RCC_HoodCameraBSR>()){
 				EditorUtility.DisplayDialog("Your Vehicle Has Hood Camera Already!", "Your vehicle has hood camera already!", "Ok");
-				Selection.activeGameObject = Selection.activeGameObject.GetComponentInChildren<RCC_HoodCamera>().gameObject;
+				Selection.activeGameObject = Selection.activeGameObject.GetComponentInChildren<RCC_HoodCameraBSR>().gameObject;
 				return;
 			}
 
@@ -65,15 +65,15 @@ public class RCC_EditorWindows : Editor {
 
 		}else{
 
-			if(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().gameObject.GetComponentInChildren<RCC_WheelCamera>()){
+			if(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().gameObject.GetComponentInChildren<RCC_WheelCameraBSR>()){
 				EditorUtility.DisplayDialog("Your Vehicle Has Wheel Camera Already!", "Your vehicle has wheel camera already!", "Ok");
-				Selection.activeGameObject = Selection.activeGameObject.GetComponentInChildren<RCC_WheelCamera>().gameObject;
+				Selection.activeGameObject = Selection.activeGameObject.GetComponentInChildren<RCC_WheelCameraBSR>().gameObject;
 				return;
 			}
 
 			GameObject wheelCam = new GameObject("Wheel Camera");
 			wheelCam.transform.SetParent(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform, false);
-			wheelCam.AddComponent<RCC_WheelCamera>();
+			wheelCam.AddComponent<RCC_WheelCameraBSR>();
 			RCC_LabelEditor.SetIcon(wheelCam, RCC_LabelEditor.LabelIcon.Purple);
 			Selection.activeGameObject = wheelCam;
 
@@ -107,8 +107,8 @@ public class RCC_EditorWindows : Editor {
 				exhaustsMain = Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.Find(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().chassis.name+"/Exhausts").gameObject;
 			}
 
-			GameObject exhaust = (GameObject)Instantiate(RCC_Settings.Instance.exhaustGas, Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.position, Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.rotation * Quaternion.Euler(0f, 180f, 0f));
-			exhaust.name = RCC_Settings.Instance.exhaustGas.name;
+			GameObject exhaust = (GameObject)Instantiate(RCC_SettingsBSR.InstanceBSR.exhaustGasBSR, Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.position, Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.rotation * Quaternion.Euler(0f, 180f, 0f));
+			exhaust.name = RCC_SettingsBSR.InstanceBSR.exhaustGasBSR.name;
 			exhaust.transform.SetParent(exhaustsMain.transform);
 			exhaust.transform.localPosition = new Vector3(1f, 0f, -2f);
 			RCC_LabelEditor.SetIcon(exhaust, RCC_LabelEditor.Icon.DiamondGray);
@@ -144,8 +144,8 @@ public class RCC_EditorWindows : Editor {
 				lightsMain = Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.Find(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().chassis.name+"/Lights").gameObject;
 			}
 
-			GameObject headLight = GameObject.Instantiate (RCC_Settings.Instance.headLights, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
-			headLight.name = RCC_Settings.Instance.headLights.name;
+			GameObject headLight = GameObject.Instantiate (RCC_SettingsBSR.InstanceBSR.headLightsBSR, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
+			headLight.name = RCC_SettingsBSR.InstanceBSR.headLightsBSR.name;
 			headLight.transform.SetParent(lightsMain.transform);
 			headLight.transform.localRotation = Quaternion.identity;
 			headLight.transform.localPosition = new Vector3(0f, 0f, 2f);
@@ -182,8 +182,8 @@ public class RCC_EditorWindows : Editor {
 				lightsMain = Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.Find(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().chassis.name+"/Lights").gameObject;
 			}
 
-			GameObject brakeLight = GameObject.Instantiate (RCC_Settings.Instance.brakeLights, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
-			brakeLight.name = RCC_Settings.Instance.brakeLights.name;
+			GameObject brakeLight = GameObject.Instantiate (RCC_SettingsBSR.InstanceBSR.brakeLightsBSR, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
+			brakeLight.name = RCC_SettingsBSR.InstanceBSR.brakeLightsBSR.name;
 			brakeLight.transform.SetParent(lightsMain.transform);
 			brakeLight.transform.localRotation = Quaternion.identity;
 			brakeLight.transform.localPosition = new Vector3(0f, 0f, -2f);
@@ -220,8 +220,8 @@ public class RCC_EditorWindows : Editor {
 				lightsMain = Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.Find(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().chassis.name+"/Lights").gameObject;
 			}
 
-			GameObject reverseLight = GameObject.Instantiate (RCC_Settings.Instance.reverseLights, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
-			reverseLight.name = RCC_Settings.Instance.reverseLights.name;
+			GameObject reverseLight = GameObject.Instantiate (RCC_SettingsBSR.InstanceBSR.reverseLightsBSR, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
+			reverseLight.name = RCC_SettingsBSR.InstanceBSR.reverseLightsBSR.name;
 			reverseLight.transform.SetParent(lightsMain.transform);
 			reverseLight.transform.localRotation = Quaternion.identity;
 			reverseLight.transform.localPosition = new Vector3(0f, 0f, -2f);
@@ -258,8 +258,8 @@ public class RCC_EditorWindows : Editor {
 				lightsMain = Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().transform.Find(Selection.activeGameObject.GetComponentInParent<RCC_CarControllerV3>().chassis.name+"/Lights").gameObject;
 			}
 
-			GameObject indicatorLight = GameObject.Instantiate (RCC_Settings.Instance.indicatorLights, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
-			indicatorLight.name = RCC_Settings.Instance.indicatorLights.name;
+			GameObject indicatorLight = GameObject.Instantiate (RCC_SettingsBSR.InstanceBSR.indicatorLightsBSR, lightsMain.transform.position, lightsMain.transform.rotation) as GameObject;
+			indicatorLight.name = RCC_SettingsBSR.InstanceBSR.indicatorLightsBSR.name;
 			indicatorLight.transform.SetParent(lightsMain.transform);
 			indicatorLight.transform.localRotation = Quaternion.identity;
 			indicatorLight.transform.localPosition = new Vector3(0f, 0f, -2f);

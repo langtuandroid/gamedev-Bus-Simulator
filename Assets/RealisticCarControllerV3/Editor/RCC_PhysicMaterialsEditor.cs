@@ -11,10 +11,10 @@ using UnityEditor;
 using System.Collections;
 using System.Collections.Generic;
 
-[CustomEditor(typeof(RCC_GroundMaterials))]
+[CustomEditor(typeof(RCC_GroundMaterialsBSR))]
 public class RCC_PhysicMaterialsEditor : Editor {
 
-	RCC_GroundMaterials physicMats;
+	RCC_GroundMaterialsBSR physicMats;
 	Color originalGUIColor;
 	string[] physicMatsNames;
 	Vector2 scrollPos;
@@ -23,7 +23,7 @@ public class RCC_PhysicMaterialsEditor : Editor {
 
 		serializedObject.Update();
 
-		physicMats = (RCC_GroundMaterials)target;
+		physicMats = (RCC_GroundMaterialsBSR)target;
 
 		originalGUIColor = GUI.backgroundColor;
 
@@ -47,16 +47,16 @@ public class RCC_PhysicMaterialsEditor : Editor {
 
 		EditorGUILayout.BeginVertical(GUI.skin.box);
 
-		for (int i = 0; i < physicMats.frictions.Length; i++) {
+		for (int i = 0; i < physicMats.frictionsBSR.Length; i++) {
 
 			EditorGUILayout.BeginVertical(GUI.skin.box);
 
-			if(physicMats.frictions[i].groundMaterial != null){
-				GUILayout.Label(physicMats.frictions[i].groundMaterial.name, EditorStyles.boldLabel);
+			if(physicMats.frictionsBSR[i].groundMaterialBSR != null){
+				GUILayout.Label(physicMats.frictionsBSR[i].groundMaterialBSR.name, EditorStyles.boldLabel);
 				EditorGUILayout.Space(); 
-				physicMats.frictions[i].groundMaterial.staticFriction = physicMats.frictions[i].groundMaterial.dynamicFriction = EditorGUILayout.FloatField("Forward And Sideways Stiffness", physicMats.frictions[i].groundMaterial.staticFriction);
-				physicMats.frictions[i].groundParticles = (GameObject)EditorGUILayout.ObjectField("Wheel Particles", physicMats.frictions[i].groundParticles, typeof(GameObject), false);
-				physicMats.frictions[i].groundSound = (AudioClip)EditorGUILayout.ObjectField("Wheel Sound", physicMats.frictions[i].groundSound, typeof(AudioClip), false);
+				physicMats.frictionsBSR[i].groundMaterialBSR.staticFriction = physicMats.frictionsBSR[i].groundMaterialBSR.dynamicFriction = EditorGUILayout.FloatField("Forward And Sideways Stiffness", physicMats.frictionsBSR[i].groundMaterialBSR.staticFriction);
+				physicMats.frictionsBSR[i].groundParticlesBSR = (GameObject)EditorGUILayout.ObjectField("Wheel Particles", physicMats.frictionsBSR[i].groundParticlesBSR, typeof(GameObject), false);
+				physicMats.frictionsBSR[i].groundSoundBSR = (AudioClip)EditorGUILayout.ObjectField("Wheel Sound", physicMats.frictionsBSR[i].groundSoundBSR, typeof(AudioClip), false);
 			}else{
 				GUI.color = Color.red;
 				GUILayout.Label("Null. Select One Material!", EditorStyles.boldLabel);
@@ -74,7 +74,7 @@ public class RCC_PhysicMaterialsEditor : Editor {
 		GUI.color = new Color(.5f, 1f, 1f, 1f);
 
 		if(GUILayout.Button(" <-- Return To RCC Settings")){
-			Selection.activeObject = Resources.Load("RCCAssets/RCCAssetSettings") as RCC_Settings;
+			Selection.activeObject = Resources.Load("RCCAssets/RCCAssetSettings") as RCC_SettingsBSR;
 		}
 
 		GUI.color = originalGUIColor;

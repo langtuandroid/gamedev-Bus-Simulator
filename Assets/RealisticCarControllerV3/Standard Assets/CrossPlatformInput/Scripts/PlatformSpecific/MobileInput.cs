@@ -3,131 +3,131 @@ using UnityEngine;
 
 namespace UnityStandardAssets.CrossPlatformInput.PlatformSpecific
 {
-    public class MobileInput : VirtualInput
+    public class MobileInput : VirtualInputBSR
     {
         private void AddButton(string name)
         {
             // we have not registered this button yet so add it, happens in the constructor
-            CrossPlatformInputManager.RegisterVirtualButton(new CrossPlatformInputManager.VirtualButton(name));
+            CrossPlatformInputManagerBSR.RegisterVirtualButtonBSR(new CrossPlatformInputManagerBSR.VirtualButtonBSR(name));
         }
 
 
         private void AddAxes(string name)
         {
             // we have not registered this button yet so add it, happens in the constructor
-            CrossPlatformInputManager.RegisterVirtualAxis(new CrossPlatformInputManager.VirtualAxis(name));
+            CrossPlatformInputManagerBSR.RegisterVirtualAxisBSR(new CrossPlatformInputManagerBSR.VirtualAxisBSR(name));
         }
 
 
-        public override float GetAxis(string name, bool raw)
+        public override float GetAxisBSR(string name, bool raw)
         {
-            if (!m_VirtualAxes.ContainsKey(name))
+            if (!m_VirtualAxesBSR.ContainsKey(name))
             {
                 AddAxes(name);
             }
-            return m_VirtualAxes[name].GetValue;
+            return m_VirtualAxesBSR[name].GetValueBSR;
         }
 
 
-        public override void SetButtonDown(string name)
+        public override void SetButtonDownBSR(string name)
         {
-            if (!m_VirtualButtons.ContainsKey(name))
+            if (!m_VirtualButtonsBSR.ContainsKey(name))
             {
                 AddButton(name);
             }
-            m_VirtualButtons[name].Pressed();
+            m_VirtualButtonsBSR[name].PressedBSR();
         }
 
 
-        public override void SetButtonUp(string name)
+        public override void SetButtonUpBSR(string name)
         {
-            if (!m_VirtualButtons.ContainsKey(name))
+            if (!m_VirtualButtonsBSR.ContainsKey(name))
             {
                 AddButton(name);
             }
-            m_VirtualButtons[name].Released();
+            m_VirtualButtonsBSR[name].ReleasedBSR();
         }
 
 
-        public override void SetAxisPositive(string name)
+        public override void SetAxisPositiveBSR(string name)
         {
-            if (!m_VirtualAxes.ContainsKey(name))
+            if (!m_VirtualAxesBSR.ContainsKey(name))
             {
                 AddAxes(name);
             }
-            m_VirtualAxes[name].Update(1f);
+            m_VirtualAxesBSR[name].UpdateBSR(1f);
         }
 
 
-        public override void SetAxisNegative(string name)
+        public override void SetAxisNegativeBSR(string name)
         {
-            if (!m_VirtualAxes.ContainsKey(name))
+            if (!m_VirtualAxesBSR.ContainsKey(name))
             {
                 AddAxes(name);
             }
-            m_VirtualAxes[name].Update(-1f);
+            m_VirtualAxesBSR[name].UpdateBSR(-1f);
         }
 
 
-        public override void SetAxisZero(string name)
+        public override void SetAxisZeroBSR(string name)
         {
-            if (!m_VirtualAxes.ContainsKey(name))
+            if (!m_VirtualAxesBSR.ContainsKey(name))
             {
                 AddAxes(name);
             }
-            m_VirtualAxes[name].Update(0f);
+            m_VirtualAxesBSR[name].UpdateBSR(0f);
         }
 
 
-        public override void SetAxis(string name, float value)
+        public override void SetAxisBSR(string name, float value)
         {
-            if (!m_VirtualAxes.ContainsKey(name))
+            if (!m_VirtualAxesBSR.ContainsKey(name))
             {
                 AddAxes(name);
             }
-            m_VirtualAxes[name].Update(value);
+            m_VirtualAxesBSR[name].UpdateBSR(value);
         }
 
 
-        public override bool GetButtonDown(string name)
+        public override bool GetButtonDownBSR(string name)
         {
-            if (m_VirtualButtons.ContainsKey(name))
+            if (m_VirtualButtonsBSR.ContainsKey(name))
             {
-                return m_VirtualButtons[name].GetButtonDown;
+                return m_VirtualButtonsBSR[name].GetButtonDownBSR;
             }
 
             AddButton(name);
-            return m_VirtualButtons[name].GetButtonDown;
+            return m_VirtualButtonsBSR[name].GetButtonDownBSR;
         }
 
 
-        public override bool GetButtonUp(string name)
+        public override bool GetButtonUpBSR(string name)
         {
-            if (m_VirtualButtons.ContainsKey(name))
+            if (m_VirtualButtonsBSR.ContainsKey(name))
             {
-                return m_VirtualButtons[name].GetButtonUp;
+                return m_VirtualButtonsBSR[name].GetButtonUpBSR;
             }
 
             AddButton(name);
-            return m_VirtualButtons[name].GetButtonUp;
+            return m_VirtualButtonsBSR[name].GetButtonUpBSR;
         }
 
 
-        public override bool GetButton(string name)
+        public override bool GetButtonBSR(string name)
         {
-            if (m_VirtualButtons.ContainsKey(name))
+            if (m_VirtualButtonsBSR.ContainsKey(name))
             {
-                return m_VirtualButtons[name].GetButton;
+                return m_VirtualButtonsBSR[name].GetButtonBSR;
             }
 
             AddButton(name);
-            return m_VirtualButtons[name].GetButton;
+            return m_VirtualButtonsBSR[name].GetButtonBSR;
         }
 
 
-        public override Vector3 MousePosition()
+        public override Vector3 MousePositionBSR()
         {
-            return virtualMousePosition;
+            return virtualMousePositionBSR;
         }
     }
 }

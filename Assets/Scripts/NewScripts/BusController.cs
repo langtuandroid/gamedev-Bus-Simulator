@@ -60,7 +60,7 @@ public class BusController : MonoBehaviour {
 	}
 	IEnumerator ParkBus(){	
 		yield return new WaitForSeconds (3);
-		parkingPos.gameObject.GetComponent<MapMarker> ().isActive = false;
+		parkingPos.gameObject.GetComponent<MapMarkerBSR> ().isActiveBSR = false;
 		gameController.SetScreenBlack ();
 		Invoke ("ParkNow",1);
 	}
@@ -75,7 +75,7 @@ public class BusController : MonoBehaviour {
 		transform.position = new Vector3(tempParkingPos.position.x,transform.position.y,tempParkingPos.position.z);
 		transform.rotation = tempParkingPos.rotation;
 		Transform tempCam= parkingPos.Find ("CameraPosition").transform;
-		gameController.carCamera.gameObject.GetComponent<RCC_Camera> ().enabled = false;
+		gameController.carCamera.gameObject.GetComponent<RCC_CameraBSR> ().enabled = false;
 		gameController.carCamera.position = tempCam.position;
 		gameController.carCamera.rotation = tempCam.rotation;
 		parkingPos.gameObject.SetActive (false);
@@ -111,9 +111,9 @@ public class BusController : MonoBehaviour {
 		anim.SetBool ("DoorOpen",false);		
 		GetComponent<Rigidbody> ().constraints = RigidbodyConstraints.None;
 		GetComponent<RCC_CarControllerV3> ().canControl = true;		
-		var camera = gameController.carCamera.gameObject.GetComponent<RCC_Camera>();
+		var camera = gameController.carCamera.gameObject.GetComponent<RCC_CameraBSR>();
 		camera.enabled = true;
-		if (camera.cameraMode != RCC_Camera.CameraMode.TPS) camera.ChangeCamera();
+		if (camera.cameraModeBSR != RCC_CameraBSR.CameraMode.TPS) camera.ChangeCameraBSR();
 		countBusStop += 1;
 		if (missionHandler.last_stop != parkingPos.gameObject.name) {
 			GameManager.Instance.bus_stops [countBusStop].SetActive (true);

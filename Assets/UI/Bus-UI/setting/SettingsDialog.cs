@@ -6,7 +6,7 @@ public class SettingsDialog : MonoBehaviour {
 	public RectTransform [] controllersPosition=new RectTransform[0];
 	public HowToPlay howToPlay;
 	void Start(){
-		if (RCC_Settings.instance.useAccelerometerForSteering == true) {
+		if (RCC_SettingsBSR.instanceBSR.useAccelerometerForSteeringBSR == true) {
 //			if (Time.timeScale > 0.5) {
 //			//	LeanTween.moveX (highLighter, 180f, 0.25f);
 //			} else {
@@ -15,7 +15,7 @@ public class SettingsDialog : MonoBehaviour {
 			highLighter.position = new Vector2(controllersPosition[2].position.x,highLighter.position.y);
 			//highLighter.localPosition= controllersPosition [2].position;
 		}
-		else if (RCC_Settings.instance.useSteeringWheelForSteering == true) {
+		else if (RCC_SettingsBSR.instanceBSR.useSteeringWheelForSteeringBSR == true) {
 //			if (Time.timeScale > 0.5) {
 //				LeanTween.moveX (highLighter, -170f, 0.25f);
 //			} else {
@@ -47,8 +47,8 @@ public class SettingsDialog : MonoBehaviour {
 //				highLighter.localPosition = new Vector2 (-170, 0);
 //			}
 			highLighter.position = new Vector2(controllersPosition[1].position.x,highLighter.position.y);
-			RCC_Settings.instance.useSteeringWheelForSteering = true;
-			RCC_Settings.instance.useAccelerometerForSteering = false;
+			RCC_SettingsBSR.instanceBSR.useSteeringWheelForSteeringBSR = true;
+			RCC_SettingsBSR.instanceBSR.useAccelerometerForSteeringBSR = false;
 			break;
 		case "Buttons":
 //			if (Time.timeScale > 0.5) {
@@ -57,8 +57,8 @@ public class SettingsDialog : MonoBehaviour {
 //				highLighter.localPosition = new Vector2 (0, 0);
 //			}
 			highLighter.position = new Vector2(controllersPosition[0].position.x,highLighter.position.y);
-			RCC_Settings.instance.useSteeringWheelForSteering = false;
-			RCC_Settings.instance.useAccelerometerForSteering = false;
+			RCC_SettingsBSR.instanceBSR.useSteeringWheelForSteeringBSR = false;
+			RCC_SettingsBSR.instanceBSR.useAccelerometerForSteeringBSR = false;
 			break;
 		case "Accelerometer":
 //			if (Time.timeScale > 0.5) {
@@ -67,8 +67,8 @@ public class SettingsDialog : MonoBehaviour {
 //				highLighter.localPosition= new Vector2 (180, 0);
 //			}	
 			highLighter.position =new Vector2(controllersPosition[2].position.x,highLighter.position.y);
-			RCC_Settings.instance.useSteeringWheelForSteering = false;
-			RCC_Settings.instance.useAccelerometerForSteering = true;
+			RCC_SettingsBSR.instanceBSR.useSteeringWheelForSteeringBSR = false;
+			RCC_SettingsBSR.instanceBSR.useAccelerometerForSteeringBSR = true;
 			break;
 		}
 	}

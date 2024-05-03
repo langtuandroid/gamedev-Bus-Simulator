@@ -15,8 +15,8 @@ public class GameController : MonoBehaviour
 	public GameObject missionCompleteDialog;
 	public GameObject missionFailedDialog;
 
-	public MapCanvasController mapCanvasController;
-	public RCC_Camera rccCam;
+	public MapCanvasControllerBSR mapCanvasController;
+	public RCC_CameraBSR rccCam;
 	[HideInInspector] public bool is_time_start = true;
 	[HideInInspector] public bool pick_current_time = true;
 	[HideInInspector] public int current_time = 0;
@@ -167,8 +167,8 @@ public class GameController : MonoBehaviour
 		bus = tempBus.transform;
 		rigid = bus.GetComponent<Rigidbody> ();
 		busController = bus.gameObject.GetComponent<BusController> ();
-		rccCam.playerCar = bus;
-		mapCanvasController.playerTransform = bus;
+		rccCam.playerCarBSR = bus;
+		mapCanvasController.playerTransformBSR = bus;
 		trafficSpwaner.position = bus.position;	
 		trafficSpwaner.SetParent (bus);
 		levels [GameManager.Instance.mission_no].SetActive (true);
@@ -176,7 +176,7 @@ public class GameController : MonoBehaviour
 		minutes = missionHandler.missionMinutes;
 		seconds = missionHandler.missionSeconds;
 		if (Application.platform == RuntimePlatform.Android) {
-			RCC_Settings.instance.controllerType = RCC_Settings.ControllerType.Mobile;
+			RCC_SettingsBSR.instanceBSR.controllerTypeBSR = RCC_SettingsBSR.ControllerType.Mobile;
 		}
 		if (GameManager.Instance.mission_no == 0) {
 			howToPlay.gameObject.transform.parent.gameObject.SetActive (true);
